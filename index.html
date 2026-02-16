@@ -384,17 +384,11 @@
             position: relative;
         }
 
-        .about-image-placeholder {
+        .about-image-wrapper img {
             aspect-ratio: 4/5;
-            background:
-                linear-gradient(135deg, var(--blush-bg) 0%, var(--cream) 100%);
             border-radius: var(--radius-xl);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--text-light);
-            font-size: 0.85rem;
-            border: 1px solid var(--border);
+            object-fit: cover;
+            width: 100%;
         }
 
         .about-image-wrapper::after {
@@ -653,12 +647,18 @@
 
         .blog-card-image {
             aspect-ratio: 16/10;
-            background: linear-gradient(135deg, var(--cream) 0%, var(--blush-bg) 100%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--text-light);
-            font-size: 0.8rem;
+            overflow: hidden;
+        }
+
+        .blog-card-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform var(--transition-slow);
+        }
+
+        .blog-card:hover .blog-card-image img {
+            transform: scale(1.05);
         }
 
         .blog-card-body {
@@ -937,9 +937,7 @@
         <div class="container">
             <div class="about-grid">
                 <div class="about-image-wrapper">
-                    <div class="about-image-placeholder">
-                        Photo of Ana Flores
-                    </div>
+                        <img src="https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?auto=format&fit=crop&w=600&q=80" alt="Ana Flores, Registered Nutritionist" class="img-cover" style="width:100%;height:100%;object-fit:cover;border-radius:var(--radius-xl);" loading="lazy">
                 </div>
                 <div class="about-text">
                     <span class="section-label">Meet Ana</span>
@@ -1123,7 +1121,9 @@
 
             <div class="blog-grid">
                 <a href="blog/" class="blog-card">
-                    <div class="blog-card-image">Coming Soon</div>
+                    <div class="blog-card-image">
+                        <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=600&q=80" alt="Healthy food ingredients and macros" style="width:100%;height:100%;object-fit:cover;" loading="lazy">
+                    </div>
                     <div class="blog-card-body">
                         <div class="blog-card-tag">Nutrition Basics</div>
                         <h3>Understanding Macros: A Beginner's Guide for Women</h3>
@@ -1132,7 +1132,9 @@
                     <div class="blog-card-meta">5 min read</div>
                 </a>
                 <a href="blog/" class="blog-card">
-                    <div class="blog-card-image">Coming Soon</div>
+                    <div class="blog-card-image">
+                        <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=600&q=80" alt="Mindful wellness and meditation" style="width:100%;height:100%;object-fit:cover;" loading="lazy">
+                    </div>
                     <div class="blog-card-body">
                         <div class="blog-card-tag">Holistic Health</div>
                         <h3>The Mind-Body Connection: How Stress Affects Your Nutrition</h3>
@@ -1141,7 +1143,9 @@
                     <div class="blog-card-meta">7 min read</div>
                 </a>
                 <a href="blog/" class="blog-card">
-                    <div class="blog-card-image">Coming Soon</div>
+                    <div class="blog-card-image">
+                        <img src="https://images.unsplash.com/photo-1543362906-acfc16c67564?auto=format&fit=crop&w=600&q=80" alt="Healthy meal prep containers" style="width:100%;height:100%;object-fit:cover;" loading="lazy">
+                    </div>
                     <div class="blog-card-body">
                         <div class="blog-card-tag">Meal Prep</div>
                         <h3>Meal Prep Sunday: 5 Simple Recipes for a Healthier Week</h3>

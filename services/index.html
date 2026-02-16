@@ -57,14 +57,14 @@
 
         .service-detail-visual {
             aspect-ratio: 4/3;
-            background: linear-gradient(135deg, var(--blush-bg) 0%, var(--cream) 100%);
             border-radius: var(--radius-xl);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--text-light);
-            font-size: 0.85rem;
-            border: 1px solid var(--border);
+            overflow: hidden;
+        }
+
+        .service-detail-visual img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
         .service-detail-text .section-label { margin-bottom: 0.75rem; }
@@ -222,7 +222,9 @@
     <section class="service-detail">
         <div class="container">
             <div class="service-detail-grid">
-                <div class="service-detail-visual">1:1 Coaching Visual</div>
+                <div class="service-detail-visual">
+                        <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=700&q=80" alt="1:1 nutrition coaching session" loading="lazy">
+                    </div>
                 <div class="service-detail-text">
                     <span class="section-label">Personalized Support</span>
                     <h2>1:1 Nutrition <em>Coaching</em></h2>
@@ -243,7 +245,9 @@
     <section class="service-detail">
         <div class="container">
             <div class="service-detail-grid">
-                <div class="service-detail-visual">Meal Planning Visual</div>
+                <div class="service-detail-visual">
+                        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=700&q=80" alt="Fresh healthy meal planning ingredients" loading="lazy">
+                    </div>
                 <div class="service-detail-text">
                     <span class="section-label">Eat With Intention</span>
                     <h2>Meal Planning & <em>Macros</em></h2>
@@ -264,7 +268,9 @@
     <section class="service-detail">
         <div class="container">
             <div class="service-detail-grid">
-                <div class="service-detail-visual">Lifestyle Program Visual</div>
+                <div class="service-detail-visual">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=700&q=80" alt="Active healthy lifestyle transformation" loading="lazy">
+                    </div>
                 <div class="service-detail-text">
                     <span class="section-label">Total Transformation</span>
                     <h2>Lifestyle <em>Transformation</em></h2>
