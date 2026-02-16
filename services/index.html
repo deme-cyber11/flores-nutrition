@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Services — Flores Nutrition | Holistic Nutrition Coaching for Women</title>
+    <meta name="description" content="Explore Flores Nutrition services: 1:1 nutrition coaching, personalized meal planning, macro guidance, and lifestyle transformation programs designed for women.">
+
+    <meta property="og:title" content="Services — Flores Nutrition">
+    <meta property="og:description" content="Personalized nutrition coaching, meal planning, and holistic health programs for women.">
+    <meta property="og:type" content="website">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <style>
+        .page-hero {
+            padding: 160px 2rem 80px;
+            background: var(--blush-bg);
+            text-align: center;
+        }
+
+        .page-hero .section-label { margin-bottom: 1rem; }
+        .page-hero h1 { margin-bottom: 1rem; }
+        .page-hero p {
+            max-width: 560px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+        }
+
+        /* Service Details */
+        .service-detail {
+            background: white;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .service-detail:nth-child(even) {
+            background: var(--cream);
+        }
+
+        .service-detail-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+        }
+
+        .service-detail:nth-child(even) .service-detail-grid {
+            direction: rtl;
+        }
+
+        .service-detail:nth-child(even) .service-detail-grid > * {
+            direction: ltr;
+        }
+
+        .service-detail-visual {
+            aspect-ratio: 4/3;
+            background: linear-gradient(135deg, var(--blush-bg) 0%, var(--cream) 100%);
+            border-radius: var(--radius-xl);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-light);
+            font-size: 0.85rem;
+            border: 1px solid var(--border);
+        }
+
+        .service-detail-text .section-label { margin-bottom: 0.75rem; }
+        .service-detail-text h2 { margin-bottom: 1.25rem; }
+        .service-detail-text p { margin-bottom: 1rem; font-size: 0.95rem; }
+
+        .service-includes {
+            list-style: none;
+            margin: 1.5rem 0 2rem;
+        }
+
+        .service-includes li {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 0.4rem 0;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        .service-includes li svg {
+            width: 16px;
+            height: 16px;
+            color: var(--sage);
+            flex-shrink: 0;
+        }
+
+        /* Pricing */
+        .pricing-section {
+            background: var(--blush-bg);
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .pricing-card {
+            background: white;
+            border-radius: var(--radius-lg);
+            padding: 2.5rem 2rem;
+            border: 1px solid var(--border);
+            text-align: center;
+            transition: all var(--transition-base);
+            position: relative;
+        }
+
+        .pricing-card.featured {
+            border-color: var(--primary);
+            box-shadow: var(--shadow-rose);
+        }
+
+        .pricing-card.featured::before {
+            content: 'Most Popular';
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--primary);
+            color: white;
+            padding: 4px 16px;
+            border-radius: var(--radius-full);
+            font-size: 0.72rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .pricing-card h3 { margin-bottom: 0.5rem; }
+
+        .pricing-price {
+            font-family: var(--font-display);
+            font-size: 2.5rem;
+            font-weight: 300;
+            color: var(--primary);
+            margin: 1rem 0 0.25rem;
+        }
+
+        .pricing-period {
+            font-size: 0.8rem;
+            color: var(--text-light);
+            margin-bottom: 1.5rem;
+        }
+
+        .pricing-features {
+            list-style: none;
+            text-align: left;
+            margin-bottom: 2rem;
+        }
+
+        .pricing-features li {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 0.4rem 0;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .pricing-features li svg {
+            width: 14px;
+            height: 14px;
+            color: var(--sage);
+            flex-shrink: 0;
+        }
+
+        /* CTA */
+        .services-cta {
+            background: var(--dark-bg);
+            color: white;
+            text-align: center;
+        }
+
+        .services-cta h2 { color: white; }
+        .services-cta p { color: rgba(255,255,255,0.65); max-width: 520px; margin: 0 auto 2rem; }
+
+        @media (max-width: 968px) {
+            .service-detail-grid { grid-template-columns: 1fr; gap: 40px; }
+            .service-detail:nth-child(even) .service-detail-grid { direction: ltr; }
+            .pricing-grid { grid-template-columns: 1fr; max-width: 400px; margin-left: auto; margin-right: auto; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="/" class="logo">Flores <span>Nutrition</span></a>
+            <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="/services/">Services</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/#course">Programs</a></li>
+                    <li><a href="/blog/">Blog</a></li>
+                    <li><a href="/#contact" class="btn btn-primary btn-sm">Book a Consultation</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <span class="section-label">Services</span>
+        <h1>How I Can <em>Help You</em></h1>
+        <p>Personalized nutrition and holistic health services designed to meet you exactly where you are on your wellness journey.</p>
+    </section>
+
+    <!-- Service 1: 1:1 Coaching -->
+    <section class="service-detail">
+        <div class="container">
+            <div class="service-detail-grid">
+                <div class="service-detail-visual">1:1 Coaching Visual</div>
+                <div class="service-detail-text">
+                    <span class="section-label">Personalized Support</span>
+                    <h2>1:1 Nutrition <em>Coaching</em></h2>
+                    <p>Work directly with Ana in a personalized coaching relationship designed around your unique needs, goals, and lifestyle. Get the individualized attention and accountability you need to make lasting changes.</p>
+                    <ul class="service-includes">
+                        <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg> Initial comprehensive health assessment</li>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg> Weekly 1-on-1 coaching sessions</li>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg> Personalized nutrition plan</li>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg> Ongoing chat support between sessions</li>
+                    </ul>
+                    <a href="/#contact" class="btn btn-primary">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service 2: Meal Planning -->
+    <section class="service-detail">
+        <div class="container">
+            <div class="service-detail-grid">
+                <div class="service-detail-visual">Meal Planning Visual</div>
+                <div class="service-detail-text">
+                    <span class="section-label">Eat With Intention</span>
+                    <h2>Meal Planning & <em>Macros</em></h2>
+                    <p>Take the guesswork out of healthy eating with custom meal plans tailored to your nutritional needs, taste preferences, and schedule. Complete with macro breakdowns and easy-to-follow grocery lists.</p>
+                    <ul class="service-includes">
+                        <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg> Custom weekly meal plans</li>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg> Macro & calorie breakdowns</li>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg> Organized grocery lists</li>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg> Easy, delicious recipes</li>
+                    </ul>
+                    <a href="/#contact" class="btn btn-primary">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service 3: Lifestyle Transformation -->
+    <section class="service-detail">
+        <div class="container">
+            <div class="service-detail-grid">
+                <div class="service-detail-visual">Lifestyle Program Visual</div>
+                <div class="service-detail-text">
+                    <span class="section-label">Total Transformation</span>
+                    <h2>Lifestyle <em>Transformation</em></h2>
+                    <p>A comprehensive program that addresses every aspect of your wellbeing — nutrition, daily habits, mindset, and routines. This is for women ready to make a complete shift in how they live and feel.</p>
+                    <ul class="service-includes">
+                        <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg> Complete lifestyle assessment</li>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg> Nutrition + habit coaching</li>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg> Mindset and goal-setting frameworks</li>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg> Monthly progress reviews</li>
+                    </ul>
+                    <a href="/#contact" class="btn btn-primary">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="pricing-section">
+        <div class="container text-center">
+            <span class="section-label">Investment</span>
+            <h2 class="section-title">Choose Your <em>Path</em></h2>
+            <p class="section-subtitle mx-auto">Every journey begins with a single step. Choose the level of support that's right for you.</p>
+
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Meal Plan</h3>
+                    <p style="font-size: 0.85rem;">Perfect for self-starters who need a roadmap.</p>
+                    <div class="pricing-price">$197</div>
+                    <div class="pricing-period">one-time</div>
+                    <ul class="pricing-features">
+                        <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg> 4-week custom meal plan</li>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg> Macro breakdowns</li>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg> Grocery lists</li>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg> 20+ recipes</li>
+                    </ul>
+                    <a href="/#contact" class="btn btn-secondary" style="width: 100%;">Get Started</a>
+                </div>
+                <div class="pricing-card featured">
+                    <h3>1:1 Coaching</h3>
+                    <p style="font-size: 0.85rem;">Ongoing personalized support and accountability.</p>
+                    <div class="pricing-price">$397</div>
+                    <div class="pricing-period">per month</div>
+                    <ul class="pricing-features">
+                        <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg> Weekly coaching calls</li>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg> Custom nutrition plan</li>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg> Chat support</li>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg> Progress tracking</li>
+                    </ul>
+                    <a href="/#contact" class="btn btn-primary" style="width: 100%;">Apply Now</a>
+                </div>
+                <div class="pricing-card">
+                    <h3>Nourished Woman</h3>
+                    <p style="font-size: 0.85rem;">The complete 12-week transformation.</p>
+                    <div class="pricing-price">$2,497</div>
+                    <div class="pricing-period">12-week program</div>
+                    <ul class="pricing-features">
+                        <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg> Everything in 1:1</li>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg> Private community</li>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg> Course materials</li>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg> Lifetime access</li>
+                    </ul>
+                    <a href="/#contact" class="btn btn-secondary" style="width: 100%;">Apply Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="services-cta">
+        <div class="container text-center">
+            <span class="section-label" style="color: var(--primary);">Not Sure Which Is Right?</span>
+            <h2>Let's Find Your <em>Perfect Fit</em></h2>
+            <p>Book a free 15-minute discovery call and I'll help you choose the path that aligns with your goals and lifestyle.</p>
+            <a href="/#contact" class="btn btn-primary btn-lg">Book Your Free Call</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div>
+                <h4 style="text-transform: none; letter-spacing: 0; font-family: var(--font-display); font-size: 1.3rem; font-weight: 400; margin-bottom: 1rem;">Flores <span style="color: var(--primary);">Nutrition</span></h4>
+                <p class="footer-description">Holistic nutrition coaching for women. Helping you build confidence, awareness, and lasting health through personalized, evidence-based guidance.</p>
+            </div>
+            <div>
+                <h4>Services</h4>
+                <a href="/services/">1:1 Coaching</a>
+                <a href="/services/">Meal Planning</a>
+                <a href="/services/">Lifestyle Program</a>
+                <a href="/#course">The Nourished Woman</a>
+            </div>
+            <div>
+                <h4>Company</h4>
+                <a href="/about.html">About Ana</a>
+                <a href="/blog/">Blog</a>
+                <a href="/#contact">Contact</a>
+            </div>
+            <div>
+                <h4>Resources</h4>
+                <a href="/blog/">Free Resources</a>
+                <a href="/#course">Programs</a>
+                <a href="/sitemap.xml">Sitemap</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Flores Nutrition. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.nav-links');
+    if (toggle && nav) {
+        toggle.addEventListener('click', () => {
+            const expanded = toggle.getAttribute('aria-expanded') === 'true';
+            toggle.setAttribute('aria-expanded', !expanded);
+            nav.classList.toggle('active');
+        });
+    }
+    </script>
+</body>
+</html>

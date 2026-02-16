@@ -1,0 +1,6 @@
+.DS_Store
+.claude/
+Claude-Skills-Library/
+node_modules/
+*.log
+.env

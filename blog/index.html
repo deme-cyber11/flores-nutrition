@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Blog — Flores Nutrition | Nutrition Tips & Holistic Health</title>
+    <meta name="description" content="Read the latest nutrition tips, holistic health advice, meal planning guides, and wellness insights from registered nutritionist Ana Flores.">
+
+    <meta property="og:title" content="Blog — Flores Nutrition">
+    <meta property="og:description" content="Nutrition tips, holistic health advice, and wellness insights from registered nutritionist Ana Flores.">
+    <meta property="og:type" content="website">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <style>
+        .page-hero {
+            padding: 160px 2rem 80px;
+            background: var(--blush-bg);
+            text-align: center;
+        }
+
+        .page-hero .section-label { margin-bottom: 1rem; }
+        .page-hero h1 { margin-bottom: 1rem; }
+        .page-hero p {
+            max-width: 560px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+        }
+
+        /* Blog Categories */
+        .blog-categories {
+            display: flex;
+            justify-content: center;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+            padding: 2rem;
+            background: white;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .category-tag {
+            padding: 6px 18px;
+            border-radius: var(--radius-full);
+            font-size: 0.82rem;
+            font-weight: 500;
+            color: var(--text-muted);
+            border: 1px solid var(--border);
+            transition: all var(--transition-fast);
+            cursor: pointer;
+        }
+
+        .category-tag:hover,
+        .category-tag.active {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+
+        /* Blog Grid */
+        .blog-listing {
+            background: white;
+        }
+
+        .blog-listing-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .blog-listing-card {
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            border: 1px solid var(--border);
+            transition: all var(--transition-base);
+            display: block;
+        }
+
+        .blog-listing-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .blog-listing-image {
+            aspect-ratio: 16/10;
+            background: linear-gradient(135deg, var(--cream) 0%, var(--blush-bg) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-light);
+            font-size: 0.85rem;
+        }
+
+        .blog-listing-body {
+            padding: 1.5rem;
+        }
+
+        .blog-listing-tag {
+            font-size: 0.7rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .blog-listing-body h3 {
+            font-size: 1.15rem;
+            margin-bottom: 0.5rem;
+            line-height: 1.3;
+        }
+
+        .blog-listing-body p {
+            font-size: 0.85rem;
+            line-height: 1.6;
+        }
+
+        .blog-listing-meta {
+            padding: 1rem 1.5rem;
+            border-top: 1px solid var(--border);
+            font-size: 0.75rem;
+            color: var(--text-light);
+            display: flex;
+            justify-content: space-between;
+        }
+
+        /* Empty State */
+        .blog-empty {
+            text-align: center;
+            padding: 4rem 2rem;
+            grid-column: 1 / -1;
+        }
+
+        .blog-empty h3 { margin-bottom: 1rem; }
+
+        /* Newsletter */
+        .newsletter-section {
+            background: var(--cream);
+            text-align: center;
+        }
+
+        .newsletter-form {
+            display: flex;
+            gap: 0.75rem;
+            max-width: 480px;
+            margin: 2rem auto 0;
+        }
+
+        .newsletter-form input {
+            flex: 1;
+            padding: 14px 20px;
+            border: 1px solid var(--border);
+            border-radius: var(--radius-full);
+            font-family: var(--font-body);
+            font-size: 0.9rem;
+            background: white;
+            outline: none;
+            transition: border-color var(--transition-fast);
+        }
+
+        .newsletter-form input:focus {
+            border-color: var(--primary);
+        }
+
+        .newsletter-form input::placeholder {
+            color: var(--text-light);
+        }
+
+        @media (max-width: 968px) {
+            .blog-listing-grid { grid-template-columns: 1fr; max-width: 500px; margin: 0 auto; }
+        }
+
+        @media (max-width: 480px) {
+            .newsletter-form { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="/" class="logo">Flores <span>Nutrition</span></a>
+            <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="/services/">Services</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/#course">Programs</a></li>
+                    <li><a href="/blog/">Blog</a></li>
+                    <li><a href="/#contact" class="btn btn-primary btn-sm">Book a Consultation</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <span class="section-label">Blog</span>
+        <h1>Nourishing <em>Insights</em></h1>
+        <p>Practical nutrition tips, holistic health guidance, and evidence-based wellness advice to support your journey.</p>
+    </section>
+
+    <!-- Categories -->
+    <div class="blog-categories">
+        <span class="category-tag active">All</span>
+        <span class="category-tag">Nutrition Basics</span>
+        <span class="category-tag">Holistic Health</span>
+        <span class="category-tag">Meal Prep</span>
+        <span class="category-tag">Mindful Eating</span>
+        <span class="category-tag">Recipes</span>
+    </div>
+
+    <!-- Blog Listing -->
+    <section class="blog-listing">
+        <div class="container">
+            <div class="blog-listing-grid">
+                <a href="/blog/" class="blog-listing-card">
+                    <div class="blog-listing-image">Coming Soon</div>
+                    <div class="blog-listing-body">
+                        <div class="blog-listing-tag">Nutrition Basics</div>
+                        <h3>Understanding Macros: A Beginner's Guide for Women</h3>
+                        <p>Everything you need to know about proteins, carbs, and fats — and why balance matters more than restriction.</p>
+                    </div>
+                    <div class="blog-listing-meta">
+                        <span>Ana Flores</span>
+                        <span>5 min read</span>
+                    </div>
+                </a>
+                <a href="/blog/" class="blog-listing-card">
+                    <div class="blog-listing-image">Coming Soon</div>
+                    <div class="blog-listing-body">
+                        <div class="blog-listing-tag">Holistic Health</div>
+                        <h3>The Mind-Body Connection: How Stress Affects Your Nutrition</h3>
+                        <p>Why managing stress is just as important as managing your diet for optimal health and wellbeing.</p>
+                    </div>
+                    <div class="blog-listing-meta">
+                        <span>Ana Flores</span>
+                        <span>7 min read</span>
+                    </div>
+                </a>
+                <a href="/blog/" class="blog-listing-card">
+                    <div class="blog-listing-image">Coming Soon</div>
+                    <div class="blog-listing-body">
+                        <div class="blog-listing-tag">Meal Prep</div>
+                        <h3>Meal Prep Sunday: 5 Simple Recipes for a Healthier Week</h3>
+                        <p>Practical, time-saving recipes that make healthy eating effortless — even on your busiest days.</p>
+                    </div>
+                    <div class="blog-listing-meta">
+                        <span>Ana Flores</span>
+                        <span>4 min read</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter-section">
+        <div class="container">
+            <span class="section-label">Stay Nourished</span>
+            <h2 class="section-title">Join the <em>Newsletter</em></h2>
+            <p class="section-subtitle mx-auto">Get weekly nutrition tips, exclusive recipes, and holistic health insights delivered straight to your inbox.</p>
+            <div class="newsletter-form">
+                <input type="email" placeholder="Enter your email address" aria-label="Email address">
+                <button class="btn btn-primary">Subscribe</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div>
+                <h4 style="text-transform: none; letter-spacing: 0; font-family: var(--font-display); font-size: 1.3rem; font-weight: 400; margin-bottom: 1rem;">Flores <span style="color: var(--primary);">Nutrition</span></h4>
+                <p class="footer-description">Holistic nutrition coaching for women. Helping you build confidence, awareness, and lasting health through personalized, evidence-based guidance.</p>
+            </div>
+            <div>
+                <h4>Services</h4>
+                <a href="/services/">1:1 Coaching</a>
+                <a href="/services/">Meal Planning</a>
+                <a href="/services/">Lifestyle Program</a>
+                <a href="/#course">The Nourished Woman</a>
+            </div>
+            <div>
+                <h4>Company</h4>
+                <a href="/about.html">About Ana</a>
+                <a href="/blog/">Blog</a>
+                <a href="/#contact">Contact</a>
+            </div>
+            <div>
+                <h4>Resources</h4>
+                <a href="/blog/">Free Resources</a>
+                <a href="/#course">Programs</a>
+                <a href="/sitemap.xml">Sitemap</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Flores Nutrition. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.nav-links');
+    if (toggle && nav) {
+        toggle.addEventListener('click', () => {
+            const expanded = toggle.getAttribute('aria-expanded') === 'true';
+            toggle.setAttribute('aria-expanded', !expanded);
+            nav.classList.toggle('active');
+        });
+    }
+    </script>
+</body>
+</html>
