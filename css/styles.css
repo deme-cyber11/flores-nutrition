@@ -430,6 +430,67 @@ section {
     color: rgba(255, 255, 255, 0.45);
 }
 
+/* ---------- Footer Email Capture ---------- */
+.footer-email-capture {
+    margin-top: 1.25rem;
+}
+
+.footer-email-capture p {
+    font-size: 0.82rem;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 0.75rem;
+}
+
+.footer-email-form {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.footer-email-form input {
+    flex: 1;
+    padding: 10px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: var(--radius-full);
+    background: rgba(255, 255, 255, 0.06);
+    color: white;
+    font-family: var(--font-body);
+    font-size: 0.82rem;
+    outline: none;
+    transition: border-color var(--transition-fast);
+}
+
+.footer-email-form input:focus {
+    border-color: var(--primary);
+}
+
+.footer-email-form input::placeholder {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.footer-email-form button {
+    padding: 10px 20px;
+    background: var(--primary);
+    color: white;
+    border: none;
+    border-radius: var(--radius-full);
+    font-family: var(--font-body);
+    font-size: 0.82rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background var(--transition-fast);
+    white-space: nowrap;
+}
+
+.footer-email-form button:hover {
+    background: var(--primary-dark);
+}
+
+@media (max-width: 480px) {
+    .footer-email-form {
+        flex-direction: column;
+    }
+}
+
 /* ---------- Animations ---------- */
 @keyframes fadeSlideUp {
     from { opacity: 0; transform: translateY(24px); }

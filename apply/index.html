@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Apply — The Nourished Woman Method | Flores Nutrition</title>
+    <meta name="description" content="Apply for The Nourished Woman Method, Ana Flores' 12-week holistic nutrition transformation program for women. Limited spots per cohort.">
+
+    <meta property="og:title" content="Apply — The Nourished Woman Method | Flores Nutrition">
+    <meta property="og:description" content="Apply for The Nourished Woman Method, a 12-week holistic nutrition transformation program for women.">
+    <meta property="og:type" content="website">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <style>
+        /* Page Hero */
+        .page-hero {
+            padding: 160px 2rem 80px;
+            background: var(--blush-bg);
+            text-align: center;
+        }
+
+        .page-hero .section-label { margin-bottom: 1rem; }
+        .page-hero h1 { margin-bottom: 1rem; }
+        .page-hero p {
+            max-width: 600px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+        }
+
+        .page-hero .hero-note {
+            display: inline-block;
+            margin-top: 1.25rem;
+            font-size: 0.85rem;
+            color: var(--primary-dark);
+            font-weight: 500;
+            letter-spacing: 0.03em;
+        }
+
+        /* Application Section */
+        .apply-section {
+            background: white;
+            padding: 100px 2rem;
+        }
+
+        .apply-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 60px;
+            align-items: start;
+            max-width: 1140px;
+            margin: 0 auto;
+        }
+
+        /* Left Column — Program Overview */
+        .program-overview h2 {
+            font-family: var(--font-display);
+            font-size: 1.6rem;
+            font-weight: 400;
+            margin-bottom: 1.75rem;
+            color: var(--text);
+        }
+
+        .feature-list {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 2.5rem 0;
+        }
+
+        .feature-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            padding: 0.6rem 0;
+            font-size: 0.95rem;
+            color: var(--text);
+            line-height: 1.5;
+        }
+
+        .feature-list li svg {
+            width: 20px;
+            height: 20px;
+            flex-shrink: 0;
+            color: var(--sage);
+            margin-top: 1px;
+        }
+
+        .investment-block {
+            background: var(--cream);
+            border-radius: var(--radius-lg);
+            padding: 1.75rem 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .investment-block .price {
+            font-family: var(--font-display);
+            font-size: 2rem;
+            font-weight: 500;
+            color: var(--text);
+            margin-bottom: 0.25rem;
+        }
+
+        .investment-block .price-alt {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        .testimonial-card {
+            background: var(--blush-bg);
+            border-radius: var(--radius-lg);
+            padding: 2rem;
+            border-left: 3px solid var(--primary);
+        }
+
+        .testimonial-card blockquote {
+            font-style: italic;
+            font-size: 0.95rem;
+            line-height: 1.7;
+            color: var(--text);
+            margin: 0 0 1rem 0;
+        }
+
+        .testimonial-card cite {
+            font-style: normal;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--primary-dark);
+        }
+
+        /* Right Column — Application Form */
+        .application-form-wrapper {
+            background: var(--cream);
+            border-radius: var(--radius-xl);
+            padding: 2.5rem;
+            border: 1px solid var(--border);
+        }
+
+        .application-form-wrapper h2 {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            font-weight: 400;
+            margin-bottom: 0.5rem;
+            color: var(--text);
+        }
+
+        .application-form-wrapper .form-intro {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.25rem;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: var(--text);
+            margin-bottom: 0.4rem;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            font-family: var(--font-body);
+            font-size: 0.9rem;
+            color: var(--text);
+            background: white;
+            border: 1px solid #DDD5CF;
+            border-radius: 8px;
+            outline: none;
+            transition: border-color 0.2s ease, box-shadow 0.2s ease;
+            -webkit-appearance: none;
+            appearance: none;
+            box-sizing: border-box;
+        }
+
+        .form-group select {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%236B6259' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 1rem center;
+            padding-right: 2.5rem;
+        }
+
+        .form-group textarea {
+            min-height: 100px;
+            resize: vertical;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(196, 144, 138, 0.15);
+        }
+
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+            color: #B5AFA8;
+        }
+
+        .form-submit-btn {
+            width: 100%;
+            padding: 1rem 2rem;
+            font-family: var(--font-body);
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: white;
+            background: var(--primary);
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.15s ease;
+            margin-top: 0.5rem;
+        }
+
+        .form-submit-btn:hover {
+            background: var(--primary-dark);
+            transform: translateY(-1px);
+        }
+
+        .form-privacy {
+            font-size: 0.78rem;
+            color: var(--text-muted);
+            text-align: center;
+            margin-top: 1rem;
+            line-height: 1.5;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            background: var(--cream);
+            padding: 100px 2rem;
+        }
+
+        .faq-section .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .faq-list {
+            max-width: 780px;
+            margin: 0 auto;
+        }
+
+        .faq-list details {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            margin-bottom: 0.75rem;
+            overflow: hidden;
+            transition: box-shadow 0.2s ease;
+        }
+
+        .faq-list details:hover {
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+        }
+
+        .faq-list details[open] {
+            box-shadow: 0 2px 16px rgba(0, 0, 0, 0.06);
+        }
+
+        .faq-list details summary {
+            padding: 1.25rem 1.5rem;
+            font-family: var(--font-body);
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--text);
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            user-select: none;
+        }
+
+        .faq-list details summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .faq-list details summary::after {
+            content: '+';
+            font-size: 1.3rem;
+            font-weight: 300;
+            color: var(--primary);
+            flex-shrink: 0;
+            transition: transform 0.2s ease;
+        }
+
+        .faq-list details[open] summary::after {
+            content: '\2212';
+        }
+
+        .faq-list details .faq-answer {
+            padding: 0 1.5rem 1.25rem;
+            font-size: 0.9rem;
+            line-height: 1.7;
+            color: var(--text-muted);
+        }
+
+        /* Responsive */
+        @media (max-width: 968px) {
+            .apply-grid {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+
+            .program-overview {
+                order: 2;
+            }
+
+            .application-form-wrapper {
+                order: 1;
+            }
+
+            .page-hero {
+                padding: 140px 1.5rem 60px;
+            }
+
+            .page-hero h1 {
+                font-size: 2rem;
+            }
+
+            .apply-section {
+                padding: 60px 1.5rem;
+            }
+
+            .faq-section {
+                padding: 60px 1.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .page-hero {
+                padding: 130px 1rem 50px;
+            }
+
+            .page-hero h1 {
+                font-size: 1.65rem;
+            }
+
+            .page-hero p {
+                font-size: 1rem;
+            }
+
+            .apply-section {
+                padding: 40px 1rem;
+            }
+
+            .application-form-wrapper {
+                padding: 1.5rem;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+
+            .investment-block {
+                padding: 1.25rem 1.5rem;
+            }
+
+            .testimonial-card {
+                padding: 1.5rem;
+            }
+
+            .faq-section {
+                padding: 40px 1rem;
+            }
+
+            .faq-list details summary {
+                padding: 1rem 1.25rem;
+                font-size: 0.9rem;
+            }
+
+            .faq-list details .faq-answer {
+                padding: 0 1.25rem 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="../index.html" class="logo">Flores <span>Nutrition</span></a>
+            <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="../services/">Services</a></li>
+                    <li><a href="../about.html">About</a></li>
+                    <li><a href="../webinar/">Free Training</a></li>
+                    <li><a href="../blog/">Blog</a></li>
+                    <li><a href="../apply/" class="btn btn-primary btn-sm">Apply Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="page-hero">
+        <span class="section-label">Application</span>
+        <h1>Apply for The Nourished <em>Woman Method</em></h1>
+        <p>A 12-week transformative program for women ready to build a lasting, healthy relationship with food and their bodies. Applications are reviewed personally by Ana.</p>
+        <span class="hero-note">Limited spots available per cohort</span>
+    </section>
+
+    <!-- Application Section -->
+    <section class="apply-section">
+        <div class="apply-grid">
+
+            <!-- Left Column — Program Overview -->
+            <div class="program-overview">
+                <h2>What's <em>Included</em></h2>
+
+                <ul class="feature-list">
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
+                        12 weekly live coaching sessions with Ana
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
+                        Personalized nutrition & meal plans
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
+                        Private community of like-minded women
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
+                        Downloadable workbooks & recipe guides
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
+                        Ongoing chat support between sessions
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
+                        Lifetime access to course materials
+                    </li>
+                </ul>
+
+                <div class="investment-block">
+                    <div class="price">Investment: $2,497</div>
+                    <div class="price-alt">or 3 payments of $899</div>
+                </div>
+
+                <div class="testimonial-card">
+                    <blockquote>"Ana completely changed how I think about food. I went from constant yo-yo dieting to actually understanding and enjoying what I eat."</blockquote>
+                    <cite>Jessica M.</cite>
+                </div>
+            </div>
+
+            <!-- Right Column — Application Form -->
+            <div class="application-form-wrapper">
+                <h2>Start Your <em>Application</em></h2>
+                <p class="form-intro">Fill out the form below and Ana will personally review your application within 48 hours.</p>
+
+                <form action="#" method="POST">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="first-name">First Name</label>
+                            <input type="text" id="first-name" name="first_name" placeholder="Your first name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="last-name">Last Name</label>
+                            <input type="text" id="last-name" name="last_name" placeholder="Your last name" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="goals">What are your top health & nutrition goals?</label>
+                        <textarea id="goals" name="goals" placeholder="Tell us about the changes you'd like to make..." required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="tried-before">What have you tried before that hasn't worked?</label>
+                        <textarea id="tried-before" name="tried_before" placeholder="Diets, programs, approaches you've tried in the past..." required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="readiness">On a scale of 1-10, how ready are you to invest in your health transformation?</label>
+                        <select id="readiness" name="readiness" required>
+                            <option value="" disabled selected>Select your readiness level</option>
+                            <option value="1">1 — Just exploring</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 — Somewhat ready</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10 — Fully committed</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="referral">How did you hear about us?</label>
+                        <select id="referral" name="referral" required>
+                            <option value="" disabled selected>Select one</option>
+                            <option value="instagram">Instagram</option>
+                            <option value="friend">Friend / Referral</option>
+                            <option value="google">Google</option>
+                            <option value="webinar">Webinar</option>
+                            <option value="blog">Blog</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="form-submit-btn">Submit My Application</button>
+
+                    <p class="form-privacy">Your information is confidential and will only be used to evaluate your application.</p>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Common Questions</span>
+                <h2 class="section-title">Frequently Asked <em>Questions</em></h2>
+            </div>
+
+            <div class="faq-list">
+                <details>
+                    <summary>Who is this program for?</summary>
+                    <div class="faq-answer">
+                        <p>The Nourished Woman Method is designed for women who want a complete transformation in their relationship with food, body, and daily habits. It's ideal for those who are tired of quick fixes and ready for lasting, meaningful change grounded in science and self-compassion.</p>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>What's the time commitment?</summary>
+                    <div class="faq-answer">
+                        <p>Plan for 3-4 hours per week: one live coaching session plus implementation of your personalized plan. The program is designed to fit into a busy lifestyle, and Ana will work with you to create a plan that's sustainable for your schedule.</p>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Is this program right for me if I have dietary restrictions?</summary>
+                    <div class="faq-answer">
+                        <p>Absolutely. Every plan is fully personalized to your needs, allergies, and preferences. Whether you're vegetarian, gluten-free, dairy-free, or managing a specific condition, Ana will tailor everything to work for you.</p>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>What happens after I apply?</summary>
+                    <div class="faq-answer">
+                        <p>Ana personally reviews every application. If it's a good fit, you'll be invited to a free 15-minute discovery call to discuss your goals, answer any questions, and make sure the program is the right next step for you.</p>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Do you offer payment plans?</summary>
+                    <div class="faq-answer">
+                        <p>Yes, we offer 3 monthly payments of $899 as an alternative to the full $2,497 investment. Payment plan details will be discussed during your discovery call so we can find the option that works best for you.</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div>
+                <h4 style="text-transform: none; letter-spacing: 0; font-family: var(--font-display); font-size: 1.3rem; font-weight: 400; margin-bottom: 1rem;">Flores <span style="color: var(--primary);">Nutrition</span></h4>
+                <p class="footer-description">Holistic nutrition coaching for women. Helping you build confidence, awareness, and lasting health through personalized, evidence-based guidance.</p>
+            </div>
+            <div>
+                <h4>Services</h4>
+                <a href="../services/">1:1 Coaching</a>
+                <a href="../services/">Meal Planning</a>
+                <a href="../services/">Lifestyle Program</a>
+                <a href="../index.html#course">The Nourished Woman</a>
+            </div>
+            <div>
+                <h4>Company</h4>
+                <a href="../about.html">About Ana</a>
+                <a href="../blog/">Blog</a>
+                <a href="../index.html#contact">Contact</a>
+            </div>
+            <div>
+                <h4>Resources</h4>
+                <a href="../blog/">Free Resources</a>
+                <a href="../index.html#course">Programs</a>
+                <a href="../sitemap.xml">Sitemap</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Flores Nutrition. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.nav-links');
+    if (toggle && nav) {
+        toggle.addEventListener('click', () => {
+            const expanded = toggle.getAttribute('aria-expanded') === 'true';
+            toggle.setAttribute('aria-expanded', !expanded);
+            nav.classList.toggle('active');
+        });
+    }
+    </script>
+</body>
+</html>

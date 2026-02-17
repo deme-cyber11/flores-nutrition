@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Free Nutrition Training — The 3 Mistakes Keeping You Stuck | Flores Nutrition</title>
+    <meta name="description" content="Join this free training to discover the 3 nutrition mistakes keeping you stuck and the holistic framework that's helped 200+ women transform their health without restrictive diets.">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Free Training: The 3 Nutrition Mistakes Keeping You Stuck">
+    <meta property="og:description" content="Discover the holistic framework that's helped 200+ women transform their health without restrictive diets or meal plan burnout. Save your free seat now.">
+    <meta property="og:type" content="website">
+    <!-- <meta property="og:url" content=""> -->
+    <!-- <meta property="og:image" content="/images/og-webinar.jpg"> -->
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Free Training: The 3 Nutrition Mistakes Keeping You Stuck">
+    <meta name="twitter:description" content="Discover the holistic framework that's helped 200+ women transform their health without restrictive diets or meal plan burnout.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- Shared Styles -->
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <!-- Schema Markup: Event -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Event",
+        "name": "Free Training: The 3 Nutrition Mistakes Keeping You Stuck",
+        "description": "A free live training where registered nutritionist Ana Flores reveals the 3 nutrition mistakes keeping women stuck and the holistic framework that creates lasting transformation.",
+        "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "location": {
+            "@type": "VirtualLocation",
+            "url": ""
+        },
+        "organizer": {
+            "@type": "Person",
+            "name": "Ana Flores",
+            "jobTitle": "Registered Nutritionist"
+        },
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock"
+        },
+        "isAccessibleForFree": true
+    }
+    </script>
+
+    <!-- Page-specific styles -->
+    <style>
+        /* ===== WEBINAR HERO ===== */
+        .webinar-hero {
+            padding: 160px 2rem 100px;
+            background:
+                radial-gradient(ellipse at 20% 80%, rgba(196, 144, 138, 0.08) 0%, transparent 50%),
+                radial-gradient(ellipse at 80% 20%, rgba(163, 177, 138, 0.06) 0%, transparent 50%),
+                linear-gradient(180deg, var(--blush-bg) 0%, var(--background) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .webinar-hero::before {
+            content: '';
+            position: absolute;
+            top: 15%;
+            right: -8%;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(196, 144, 138, 0.07) 0%, transparent 70%);
+            border-radius: 50%;
+            animation: gentlePulse 8s ease-in-out infinite;
+        }
+
+        .webinar-hero::after {
+            content: '';
+            position: absolute;
+            bottom: 10%;
+            left: -5%;
+            width: 350px;
+            height: 350px;
+            background: radial-gradient(circle, rgba(163, 177, 138, 0.06) 0%, transparent 70%);
+            border-radius: 50%;
+            animation: gentlePulse 10s ease-in-out infinite 2s;
+        }
+
+        .webinar-hero-content {
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            gap: 60px;
+            align-items: center;
+            max-width: var(--container-max);
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .webinar-hero-label {
+            display: inline-block;
+            padding: 6px 16px;
+            background: var(--primary-light);
+            color: var(--primary-dark);
+            border-radius: var(--radius-full);
+            font-size: 0.72rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 1.5rem;
+            animation: fadeSlideUp 0.6s ease both;
+        }
+
+        .webinar-hero h1 {
+            margin-bottom: 1.25rem;
+            animation: fadeSlideUp 0.6s ease 0.1s both;
+        }
+
+        .webinar-hero h1 em {
+            font-style: italic;
+            color: var(--primary);
+        }
+
+        .webinar-hero-subtitle {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            max-width: 520px;
+            color: var(--text-muted);
+            line-height: 1.8;
+            animation: fadeSlideUp 0.6s ease 0.2s both;
+        }
+
+        .webinar-hero .hero-proof {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            animation: fadeSlideUp 0.6s ease 0.3s both;
+        }
+
+        .hero-proof-avatars {
+            display: flex;
+        }
+
+        .hero-proof-avatar {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: var(--sand);
+            border: 2px solid white;
+            margin-left: -8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.65rem;
+            font-weight: 600;
+            color: var(--text-muted);
+        }
+
+        .hero-proof-avatar:first-child { margin-left: 0; }
+
+        .hero-proof-text {
+            font-size: 0.82rem;
+            color: var(--text-muted);
+            line-height: 1.4;
+        }
+
+        .hero-proof-text strong {
+            color: var(--secondary);
+        }
+
+        /* ===== REGISTRATION FORM ===== */
+        .reg-form-card {
+            background: white;
+            border-radius: var(--radius-xl);
+            padding: 2.5rem;
+            box-shadow: var(--shadow-lg);
+            border: 1px solid var(--border);
+            animation: fadeIn 1s ease 0.3s both;
+            position: relative;
+        }
+
+        .reg-form-card::before {
+            content: '';
+            position: absolute;
+            top: -16px;
+            right: -16px;
+            width: 70px;
+            height: 70px;
+            background: var(--sage-light);
+            border-radius: 50%;
+            z-index: -1;
+        }
+
+        .reg-form-card::after {
+            content: '';
+            position: absolute;
+            bottom: -12px;
+            left: -12px;
+            width: 50px;
+            height: 50px;
+            background: var(--primary-light);
+            border-radius: 50%;
+            z-index: -1;
+        }
+
+        .reg-form-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 5px 12px;
+            background: rgba(163, 177, 138, 0.12);
+            color: #6B7F56;
+            border-radius: var(--radius-full);
+            font-size: 0.72rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 1.25rem;
+        }
+
+        .reg-form-badge svg {
+            width: 14px;
+            height: 14px;
+        }
+
+        .reg-form-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            font-family: var(--font-display);
+            font-weight: 500;
+        }
+
+        .reg-form-card > p {
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .reg-form {
+            display: flex;
+            flex-direction: column;
+            gap: 0.85rem;
+        }
+
+        .reg-form input {
+            width: 100%;
+            padding: 14px 16px;
+            border: 1.5px solid var(--border);
+            border-radius: var(--radius-md);
+            font-family: var(--font-body);
+            font-size: 0.9rem;
+            color: var(--text);
+            background: var(--cream);
+            transition: all var(--transition-fast);
+            outline: none;
+        }
+
+        .reg-form input::placeholder {
+            color: var(--text-light);
+        }
+
+        .reg-form input:focus {
+            border-color: var(--primary);
+            background: white;
+            box-shadow: 0 0 0 3px var(--primary-light);
+        }
+
+        .reg-form .btn {
+            width: 100%;
+            padding: 16px 32px;
+            font-size: 0.95rem;
+            font-weight: 600;
+        }
+
+        .reg-form-note {
+            font-size: 0.75rem;
+            color: var(--text-light);
+            text-align: center;
+            margin-top: 0.25rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+        }
+
+        .reg-form-note svg {
+            width: 13px;
+            height: 13px;
+            color: var(--text-light);
+            flex-shrink: 0;
+        }
+
+        /* ===== WHAT YOU'LL LEARN ===== */
+        .learn-section {
+            background: white;
+        }
+
+        .learn-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .learn-card {
+            display: flex;
+            gap: 1.25rem;
+            padding: 2rem;
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--border);
+            background: var(--background);
+            transition: all var(--transition-base);
+        }
+
+        .learn-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-md);
+            border-color: var(--border-warm);
+        }
+
+        .learn-icon {
+            width: 52px;
+            height: 52px;
+            min-width: 52px;
+            background: var(--primary-light);
+            border-radius: var(--radius-circle);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary);
+        }
+
+        .learn-icon svg {
+            width: 24px;
+            height: 24px;
+        }
+
+        .learn-card h4 {
+            font-size: 1.05rem;
+            font-weight: 600;
+            font-family: var(--font-body);
+            color: var(--secondary);
+            margin-bottom: 0.5rem;
+            line-height: 1.4;
+        }
+
+        .learn-card p {
+            font-size: 0.88rem;
+            line-height: 1.7;
+            color: var(--text-muted);
+        }
+
+        /* ===== HOST SECTION ===== */
+        .host-section {
+            background: var(--cream);
+        }
+
+        .host-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 80px;
+            align-items: center;
+        }
+
+        .host-image-wrapper {
+            position: relative;
+        }
+
+        .host-image-wrapper img {
+            aspect-ratio: 4 / 5;
+            border-radius: var(--radius-xl);
+            object-fit: cover;
+            width: 100%;
+        }
+
+        .host-image-wrapper::after {
+            content: '';
+            position: absolute;
+            bottom: -16px;
+            right: -16px;
+            width: 120px;
+            height: 120px;
+            background: var(--primary-light);
+            border-radius: var(--radius-xl);
+            z-index: -1;
+        }
+
+        .host-text .section-label { margin-bottom: 1rem; }
+
+        .host-text h2 {
+            margin-bottom: 1.5rem;
+        }
+
+        .host-text h2 em {
+            font-style: italic;
+            color: var(--primary);
+        }
+
+        .host-text p {
+            margin-bottom: 1.25rem;
+            font-size: 1rem;
+            line-height: 1.8;
+        }
+
+        .host-credentials {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin-top: 2rem;
+        }
+
+        .host-credential-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 14px;
+            background: white;
+            border-radius: var(--radius-full);
+            font-size: 0.78rem;
+            font-weight: 500;
+            color: var(--text-muted);
+            border: 1px solid var(--border);
+        }
+
+        .host-credential-tag svg {
+            width: 14px;
+            height: 14px;
+            color: var(--sage);
+        }
+
+        /* ===== TESTIMONIALS ===== */
+        .webinar-testimonials {
+            background: var(--blush-bg);
+        }
+
+        .webinar-testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            margin-top: 3rem;
+            max-width: 880px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .webinar-testimonial-card {
+            background: white;
+            border-radius: var(--radius-lg);
+            padding: 2rem;
+            border: 1px solid var(--border);
+        }
+
+        .testimonial-stars {
+            display: flex;
+            gap: 2px;
+            margin-bottom: 1rem;
+        }
+
+        .testimonial-stars svg {
+            width: 16px;
+            height: 16px;
+            color: var(--terra);
+            fill: var(--terra);
+        }
+
+        .webinar-testimonial-card blockquote {
+            font-family: var(--font-display);
+            font-style: italic;
+            font-size: 1rem;
+            color: var(--text);
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .testimonial-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: var(--cream);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            font-size: 0.8rem;
+            color: var(--primary);
+        }
+
+        .testimonial-name {
+            font-weight: 600;
+            font-size: 0.85rem;
+            color: var(--secondary);
+        }
+
+        .testimonial-detail {
+            font-size: 0.75rem;
+            color: var(--text-light);
+        }
+
+        /* ===== FINAL CTA ===== */
+        .final-cta {
+            background:
+                linear-gradient(135deg, var(--dark-bg) 0%, #3a3530 100%);
+            color: white;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .final-cta::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -20%;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(196, 144, 138, 0.1) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .final-cta::after {
+            content: '';
+            position: absolute;
+            bottom: -30%;
+            right: -10%;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(163, 177, 138, 0.06) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .final-cta .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .final-cta .section-label {
+            color: var(--primary);
+        }
+
+        .final-cta h2 {
+            color: white;
+            margin-bottom: 1rem;
+        }
+
+        .final-cta h2 em {
+            font-style: italic;
+            color: var(--primary);
+        }
+
+        .final-cta > .container > p {
+            color: rgba(255, 255, 255, 0.65);
+            max-width: 520px;
+            margin: 0 auto 2.5rem;
+            font-size: 1.05rem;
+        }
+
+        .final-cta-form {
+            max-width: 480px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.06);
+            border-radius: var(--radius-xl);
+            padding: 2.5rem;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .final-cta-form .reg-form input {
+            background: rgba(255, 255, 255, 0.08);
+            border-color: rgba(255, 255, 255, 0.12);
+            color: white;
+        }
+
+        .final-cta-form .reg-form input::placeholder {
+            color: rgba(255, 255, 255, 0.4);
+        }
+
+        .final-cta-form .reg-form input:focus {
+            border-color: var(--primary);
+            background: rgba(255, 255, 255, 0.12);
+            box-shadow: 0 0 0 3px rgba(196, 144, 138, 0.2);
+        }
+
+        .final-cta-form .reg-form-note {
+            color: rgba(255, 255, 255, 0.35);
+        }
+
+        .final-cta-form .reg-form-note svg {
+            color: rgba(255, 255, 255, 0.35);
+        }
+
+        .final-cta-urgency {
+            margin-top: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.55);
+        }
+
+        .final-cta-urgency svg {
+            width: 16px;
+            height: 16px;
+            color: var(--primary);
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 968px) {
+            .webinar-hero-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: 40px;
+            }
+
+            .webinar-hero-subtitle {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .webinar-hero .hero-proof {
+                justify-content: center;
+            }
+
+            .reg-form-card {
+                max-width: 480px;
+                margin: 0 auto;
+            }
+
+            .learn-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .host-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .host-image-wrapper {
+                max-width: 400px;
+                margin: 0 auto;
+            }
+
+            .webinar-testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .webinar-hero {
+                padding: 120px 1rem 60px;
+            }
+
+            .reg-form-card {
+                padding: 1.75rem;
+            }
+
+            .learn-card {
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+            }
+
+            .final-cta-form {
+                padding: 1.75rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="../index.html" class="logo">Flores <span>Nutrition</span></a>
+            <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="../services/">Services</a></li>
+                    <li><a href="../about.html">About</a></li>
+                    <li><a href="../webinar/">Free Training</a></li>
+                    <li><a href="../blog/">Blog</a></li>
+                    <li><a href="../apply/" class="btn btn-primary btn-sm">Apply Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="webinar-hero">
+        <div class="webinar-hero-content">
+            <div class="webinar-hero-text">
+                <span class="webinar-hero-label">Free Live Training</span>
+                <h1>The 3 Nutrition Mistakes Keeping You <em>Stuck</em></h1>
+                <p class="webinar-hero-subtitle">And the holistic framework that's helped 200+ women transform their health without restrictive diets or meal plan burnout</p>
+                <div class="hero-proof">
+                    <div class="hero-proof-avatars">
+                        <div class="hero-proof-avatar">JM</div>
+                        <div class="hero-proof-avatar">SC</div>
+                        <div class="hero-proof-avatar">LR</div>
+                        <div class="hero-proof-avatar">KP</div>
+                    </div>
+                    <div class="hero-proof-text">
+                        Join <strong>200+ women</strong> who've already<br>transformed their health
+                    </div>
+                </div>
+            </div>
+            <div class="reg-form-card">
+                <div class="reg-form-badge">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15.91 11.672a.375.375 0 0 1 0 .656l-5.603 3.113a.375.375 0 0 1-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112Z"/></svg>
+                    Free Training
+                </div>
+                <h3>Save Your Free Seat</h3>
+                <p>Register now to get instant access to this live training and learn the framework that changes everything.</p>
+                <form class="reg-form" action="#" method="POST">
+                    <input type="text" name="first_name" placeholder="Your first name" required aria-label="First name">
+                    <input type="email" name="email" placeholder="Your email address" required aria-label="Email address">
+                    <button type="submit" class="btn btn-primary">Save My Seat</button>
+                </form>
+                <div class="reg-form-note">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z"/></svg>
+                    Your information is 100% secure. We never share your data.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What You'll Learn -->
+    <section class="learn-section">
+        <div class="container">
+            <div class="text-center">
+                <span class="section-label">What You'll Discover</span>
+                <h2 class="section-title">In This Free Training, <em>You'll Learn</em></h2>
+                <p class="section-subtitle mx-auto">Walk away with actionable insights you can implement immediately — no matter where you are in your health journey.</p>
+            </div>
+
+            <div class="learn-grid">
+                <div class="learn-card">
+                    <div class="learn-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z"/></svg>
+                    </div>
+                    <div>
+                        <h4>Why calorie counting alone is keeping you stuck</h4>
+                        <p>Discover what to focus on instead of obsessing over numbers — and why this one shift makes the biggest difference in sustainable results.</p>
+                    </div>
+                </div>
+                <div class="learn-card">
+                    <div class="learn-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6A2.25 2.25 0 0 1 6 3.75h2.25A2.25 2.25 0 0 1 10.5 6v2.25a2.25 2.25 0 0 1-2.25 2.25H6a2.25 2.25 0 0 1-2.25-2.25V6ZM3.75 15.75A2.25 2.25 0 0 1 6 13.5h2.25a2.25 2.25 0 0 1 2.25 2.25V18a2.25 2.25 0 0 1-2.25 2.25H6A2.25 2.25 0 0 1 3.75 18v-2.25ZM13.5 6a2.25 2.25 0 0 1 2.25-2.25H18A2.25 2.25 0 0 1 20.25 6v2.25A2.25 2.25 0 0 1 18 10.5h-2.25a2.25 2.25 0 0 1-2.25-2.25V6ZM13.5 15.75a2.25 2.25 0 0 1 2.25-2.25H18a2.25 2.25 0 0 1 2.25 2.25V18A2.25 2.25 0 0 1 18 20.25h-2.25A2.25 2.25 0 0 1 13.5 18v-2.25Z"/></svg>
+                    </div>
+                    <div>
+                        <h4>The 4-pillar framework that creates lasting change</h4>
+                        <p>Learn the holistic system that addresses nutrition, mindset, habits, and lifestyle together — not just temporary results, but real transformation.</p>
+                    </div>
+                </div>
+                <div class="learn-card">
+                    <div class="learn-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"/></svg>
+                    </div>
+                    <div>
+                        <h4>How to build a nutrition plan that fits YOUR life</h4>
+                        <p>Stop following someone else's rules. Learn how to create a personalized approach that works with your schedule, preferences, and real-world demands.</p>
+                    </div>
+                </div>
+                <div class="learn-card">
+                    <div class="learn-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z"/></svg>
+                    </div>
+                    <div>
+                        <h4>The #1 mindset shift that separates women who struggle from women who thrive</h4>
+                        <p>This simple but powerful reframe is the difference between staying stuck in the diet cycle and building a healthy relationship with food for life.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Your Host -->
+    <section class="host-section">
+        <div class="container">
+            <div class="host-grid">
+                <div class="host-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?auto=format&fit=crop&w=500&q=80" alt="Ana Flores, Registered Nutritionist and your host for this free training" loading="lazy">
+                </div>
+                <div class="host-text">
+                    <span class="section-label">Your Host</span>
+                    <h2>Meet Ana Flores, <em>Registered Nutritionist</em></h2>
+                    <p>Ana is a registered nutritionist and holistic health practitioner who has helped over 200 women transform their relationship with food and their bodies.</p>
+                    <p>After years of watching women struggle with restrictive diets, counting calories, and jumping from one meal plan to the next, Ana developed her signature 4-pillar framework that addresses the real reasons women stay stuck — and creates change that actually lasts.</p>
+                    <p>In this free training, Ana shares the exact insights that form the foundation of her 12-week Nourished Woman Method — the same program that has a 95% client satisfaction rate.</p>
+                    <div class="host-credentials">
+                        <span class="host-credential-tag">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
+                            Registered Nutritionist
+                        </span>
+                        <span class="host-credential-tag">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
+                            Holistic Health Certified
+                        </span>
+                        <span class="host-credential-tag">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
+                            200+ Clients
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="webinar-testimonials">
+        <div class="container text-center">
+            <span class="section-label">Client Stories</span>
+            <h2 class="section-title">Women Who <em>Transformed</em> Their Health</h2>
+            <p class="section-subtitle mx-auto">Hear from women who have worked with Ana and experienced real, lasting results.</p>
+
+            <div class="webinar-testimonials-grid">
+                <div class="webinar-testimonial-card">
+                    <div class="testimonial-stars">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <blockquote>"Ana completely changed how I think about food. I went from constant yo-yo dieting to actually understanding and enjoying what I eat. I've never felt better."</blockquote>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">JM</div>
+                        <div>
+                            <div class="testimonial-name">Jessica M.</div>
+                            <div class="testimonial-detail">12-Week Program Graduate</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="webinar-testimonial-card">
+                    <div class="testimonial-stars">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <blockquote>"The holistic approach is what sets Ana apart. She helped me with my nutrition, but also my confidence, my energy, and my relationship with my own body."</blockquote>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">SC</div>
+                        <div>
+                            <div class="testimonial-name">Sofia C.</div>
+                            <div class="testimonial-detail">1:1 Coaching Client</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta">
+        <div class="container">
+            <span class="section-label">Don't Miss Out</span>
+            <h2>Don't Miss This <em>Free Training</em></h2>
+            <p>Register now and discover the framework that has helped hundreds of women break free from the diet cycle and build lasting health.</p>
+
+            <div class="final-cta-form">
+                <form class="reg-form" action="#" method="POST">
+                    <input type="text" name="first_name" placeholder="Your first name" required aria-label="First name">
+                    <input type="email" name="email" placeholder="Your email address" required aria-label="Email address">
+                    <button type="submit" class="btn btn-primary">Save My Seat</button>
+                </form>
+                <div class="reg-form-note">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z"/></svg>
+                    Your information is 100% secure. We never share your data.
+                </div>
+            </div>
+
+            <div class="final-cta-urgency">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>
+                Spots are limited — register now to secure yours
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div>
+                <h4 style="text-transform: none; letter-spacing: 0; font-family: var(--font-display); font-size: 1.3rem; font-weight: 400; margin-bottom: 1rem;">Flores <span style="color: var(--primary);">Nutrition</span></h4>
+                <p class="footer-description">Holistic nutrition coaching for women. Helping you build confidence, awareness, and lasting health through personalized, evidence-based guidance.</p>
+            </div>
+            <div>
+                <h4>Services</h4>
+                <a href="../services/">1:1 Coaching</a>
+                <a href="../services/">Meal Planning</a>
+                <a href="../services/">Lifestyle Program</a>
+                <a href="../apply/">The Nourished Woman</a>
+            </div>
+            <div>
+                <h4>Company</h4>
+                <a href="../about.html">About Ana</a>
+                <a href="../blog/">Blog</a>
+                <a href="../webinar/">Free Training</a>
+            </div>
+            <div>
+                <h4>Resources</h4>
+                <a href="../blog/">Free Resources</a>
+                <a href="../apply/">Apply Now</a>
+                <a href="../sitemap.xml">Sitemap</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Flores Nutrition. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu JS -->
+    <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.nav-links');
+    if (toggle && nav) {
+        toggle.addEventListener('click', () => {
+            const expanded = toggle.getAttribute('aria-expanded') === 'true';
+            toggle.setAttribute('aria-expanded', !expanded);
+            nav.classList.toggle('active');
+        });
+    }
+    </script>
+
+</body>
+</html>

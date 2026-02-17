@@ -99,8 +99,8 @@
 
         .pricing-grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 2rem;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
             margin-top: 3rem;
         }
 
@@ -186,6 +186,10 @@
         @media (max-width: 968px) {
             .service-detail-grid { grid-template-columns: 1fr; gap: 40px; }
             .service-detail:nth-child(even) .service-detail-grid { direction: ltr; }
+            .pricing-grid { grid-template-columns: 1fr 1fr; }
+        }
+
+        @media (max-width: 600px) {
             .pricing-grid { grid-template-columns: 1fr; max-width: 400px; margin-left: auto; margin-right: auto; }
         }
     </style>
@@ -203,9 +207,9 @@
                 <ul class="nav-links">
                     <li><a href="../services/">Services</a></li>
                     <li><a href="../about.html">About</a></li>
-                    <li><a href="../index.html#course">Programs</a></li>
+                    <li><a href="../webinar/">Free Training</a></li>
                     <li><a href="../blog/">Blog</a></li>
-                    <li><a href="../index.html#contact" class="btn btn-primary btn-sm">Book a Consultation</a></li>
+                    <li><a href="../apply/" class="btn btn-primary btn-sm">Apply Now</a></li>
                 </ul>
             </nav>
         </div>
@@ -287,27 +291,45 @@
         </div>
     </section>
 
-    <!-- Pricing -->
+    <!-- Pricing Ladder -->
     <section class="pricing-section">
         <div class="container text-center">
-            <span class="section-label">Investment</span>
+            <span class="section-label">Investment in Yourself</span>
             <h2 class="section-title">Choose Your <em>Path</em></h2>
-            <p class="section-subtitle mx-auto">Every journey begins with a single step. Choose the level of support that's right for you.</p>
+            <p class="section-subtitle mx-auto">Start wherever feels right. Every path leads to a healthier, more confident you.</p>
 
             <div class="pricing-grid">
+                <!-- Tier 1: Digital Products -->
                 <div class="pricing-card">
-                    <h3>Meal Plan</h3>
-                    <p style="font-size: 0.85rem;">Perfect for self-starters who need a roadmap.</p>
+                    <h3>Starter Guide</h3>
+                    <p style="font-size: 0.85rem;">Perfect for self-starters ready to take the first step.</p>
+                    <div class="pricing-price">$47</div>
+                    <div class="pricing-period">one-time</div>
+                    <ul class="pricing-features">
+                        <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg> 4-week meal plan template</li>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg> Macro calculator guide</li>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg> 30+ healthy recipes</li>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg> Grocery list templates</li>
+                    </ul>
+                    <a href="../free-guide/" class="btn btn-secondary" style="width: 100%;">Get Started</a>
+                </div>
+
+                <!-- Tier 2: Custom Meal Plan -->
+                <div class="pricing-card">
+                    <h3>Custom Plan</h3>
+                    <p style="font-size: 0.85rem;">A personalized nutrition roadmap made just for you.</p>
                     <div class="pricing-price">$197</div>
                     <div class="pricing-period">one-time</div>
                     <ul class="pricing-features">
+                        <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg> Initial nutrition assessment</li>
                         <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg> 4-week custom meal plan</li>
-                        <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg> Macro breakdowns</li>
-                        <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg> Grocery lists</li>
-                        <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg> 20+ recipes</li>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg> Personalized macro targets</li>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg> 1 follow-up email check-in</li>
                     </ul>
                     <a href="../index.html#contact" class="btn btn-secondary" style="width: 100%;">Get Started</a>
                 </div>
+
+                <!-- Tier 3: 1:1 Coaching (Featured) -->
                 <div class="pricing-card featured">
                     <h3>1:1 Coaching</h3>
                     <p style="font-size: 0.85rem;">Ongoing personalized support and accountability.</p>
@@ -316,35 +338,39 @@
                     <ul class="pricing-features">
                         <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg> Weekly coaching calls</li>
                         <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg> Custom nutrition plan</li>
-                        <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg> Chat support</li>
-                        <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg> Progress tracking</li>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg> Unlimited chat support</li>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg> Monthly progress reviews</li>
                     </ul>
                     <a href="../index.html#contact" class="btn btn-primary" style="width: 100%;">Apply Now</a>
                 </div>
+
+                <!-- Tier 4: The Nourished Woman Method (Flagship) -->
                 <div class="pricing-card">
                     <h3>Nourished Woman</h3>
                     <p style="font-size: 0.85rem;">The complete 12-week transformation.</p>
                     <div class="pricing-price">$2,497</div>
                     <div class="pricing-period">12-week program</div>
                     <ul class="pricing-features">
-                        <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg> Everything in 1:1</li>
-                        <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg> Private community</li>
-                        <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg> Course materials</li>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg> Everything in 1:1 Coaching</li>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg> Private community access</li>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg> Course materials & workbooks</li>
                         <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg> Lifetime access</li>
                     </ul>
-                    <a href="../index.html#contact" class="btn btn-secondary" style="width: 100%;">Apply Now</a>
+                    <a href="../apply/" class="btn btn-secondary" style="width: 100%;">Apply Now</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA -->
     <section class="services-cta">
         <div class="container text-center">
-            <span class="section-label" style="color: var(--primary);">Not Sure Which Is Right?</span>
-            <h2>Let's Find Your <em>Perfect Fit</em></h2>
-            <p>Book a free 15-minute discovery call and I'll help you choose the path that aligns with your goals and lifestyle.</p>
-            <a href="../index.html#contact" class="btn btn-primary btn-lg">Book Your Free Call</a>
+            <span class="section-label" style="color: var(--primary);">Not Sure Where to Start?</span>
+            <h2>Watch Our Free <em>Training</em></h2>
+            <p>Join Ana's free masterclass to learn the holistic nutrition framework that's helped 200+ women transform their health. Then choose the path that's right for you.</p>
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <a href="../webinar/" class="btn btn-primary btn-lg">Watch Free Training</a>
+                <a href="../apply/" class="btn btn-lg" style="background: transparent; border: 1.5px solid rgba(255,255,255,0.3); color: white;">Apply for Program</a>
+            </div>
         </div>
     </section>
 
@@ -359,8 +385,8 @@
                 <h4>Services</h4>
                 <a href="../services/">1:1 Coaching</a>
                 <a href="../services/">Meal Planning</a>
-                <a href="../services/">Lifestyle Program</a>
-                <a href="../index.html#course">The Nourished Woman</a>
+                <a href="../services/">Group Programs</a>
+                <a href="../apply/">The Nourished Woman</a>
             </div>
             <div>
                 <h4>Company</h4>
@@ -370,8 +396,9 @@
             </div>
             <div>
                 <h4>Resources</h4>
-                <a href="../blog/">Free Resources</a>
-                <a href="../index.html#course">Programs</a>
+                <a href="../free-guide/">Free Meal Plan</a>
+                <a href="../webinar/">Free Training</a>
+                <a href="../blog/">Blog</a>
                 <a href="../sitemap.xml">Sitemap</a>
             </div>
         </div>
