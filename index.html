@@ -549,6 +549,51 @@
             line-height: 1.4;
         }
 
+        /* ===== COURSE VALUE STACK ===== */
+        .course-value-stack {
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: var(--radius-lg);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .value-line {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.5rem 0;
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.9rem;
+        }
+
+        .value-strikethrough {
+            text-decoration: line-through;
+            opacity: 0.5;
+        }
+
+        .value-investment {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            margin-top: 0.5rem;
+            padding-top: 0.75rem;
+            font-weight: 600;
+            color: white;
+            font-size: 1.1rem;
+        }
+
+        .value-investment span:last-child {
+            color: var(--primary);
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+        }
+
+        .value-payment {
+            text-align: center;
+            font-size: 0.82rem;
+            color: rgba(255, 255, 255, 0.4);
+            margin-top: 0.5rem;
+        }
+
         /* ===== TESTIMONIALS ===== */
         .testimonials {
             background: var(--blush-bg);
@@ -909,6 +954,7 @@
                     <li><a href="services/">Services</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="webinar/">Free Training</a></li>
+                    <li><a href="results/">Results</a></li>
                     <li><a href="blog/">Blog</a></li>
                     <li><a href="apply/" class="btn btn-primary btn-sm">Apply Now</a></li>
                 </ul>
@@ -1099,7 +1145,7 @@
                 <div class="course-text">
                     <span class="section-label">Signature Program</span>
                     <h2>The Nourished Woman <em>Method</em></h2>
-                    <p>A 12-week intensive program designed to completely transform your relationship with food, your body, and your daily habits. More than a diet — it's a lifestyle revolution.</p>
+                    <p>A 12-week intensive program designed to completely transform your relationship with food, your body, and your daily habits. More than a diet — it's a lifestyle revolution. Limited to 15 women per cohort to ensure personalized attention.</p>
                     <ul class="course-features">
                         <li>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
@@ -1122,6 +1168,11 @@
                             Lifetime access to course materials
                         </li>
                     </ul>
+                    <div class="course-value-stack">
+                        <div class="value-line"><span>Total Program Value</span><span class="value-strikethrough">$4,488</span></div>
+                        <div class="value-line value-investment"><span>Your Investment</span><span>$2,497</span></div>
+                        <div class="value-payment">or 3 payments of $899</div>
+                    </div>
                     <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
                         <a href="apply/" class="btn btn-primary">Apply Now</a>
                         <a href="webinar/" class="btn btn-outline-white">Watch Free Training</a>
@@ -1234,6 +1285,9 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div style="text-align: center; margin-top: 2.5rem;">
+                <a href="results/" class="btn btn-secondary">See All Client Results &rarr;</a>
             </div>
         </div>
     </section>
@@ -1350,10 +1404,12 @@
                 <a href="services/">Meal Planning</a>
                 <a href="services/">Group Programs</a>
                 <a href="apply/">The Nourished Woman</a>
+                <a href="corporate/">Corporate Wellness</a>
             </div>
             <div>
                 <h4>Company</h4>
                 <a href="about.html">About Ana</a>
+                <a href="results/">Client Results</a>
                 <a href="blog/">Blog</a>
                 <a href="#contact">Contact</a>
             </div>

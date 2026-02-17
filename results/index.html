@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Client Results — Flores Nutrition | Real Women, Real Transformations</title>
+    <meta name="description" content="See real results from women who transformed their health with Flores Nutrition. Client stories, testimonials, and transformation journeys from the Nourished Woman Method.">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Client Results — Flores Nutrition | Real Women, Real Transformations">
+    <meta property="og:description" content="See real results from women who transformed their health with Flores Nutrition. Client stories, testimonials, and transformation journeys.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://deme-cyber11.github.io/flores-nutrition/results/">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=1200&h=630&q=80">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Client Results — Flores Nutrition | Real Women, Real Transformations">
+    <meta name="twitter:description" content="See real results from women who transformed their health with Flores Nutrition. Client stories, testimonials, and transformation journeys.">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=1200&h=630&q=80">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- Shared Styles -->
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Client Results — Flores Nutrition",
+        "description": "See real results from women who transformed their health with Flores Nutrition.",
+        "url": "https://deme-cyber11.github.io/flores-nutrition/results/",
+        "isPartOf": {
+            "@type": "WebSite",
+            "name": "Flores Nutrition",
+            "url": "https://deme-cyber11.github.io/flores-nutrition/"
+        },
+        "about": {
+            "@type": "HealthAndBeautyBusiness",
+            "name": "Flores Nutrition",
+            "founder": {
+                "@type": "Person",
+                "name": "Ana Flores",
+                "jobTitle": "Registered Nutritionist"
+            }
+        }
+    }
+    </script>
+
+    <!-- Page-specific styles -->
+    <style>
+        /* ===== HERO ===== */
+        .results-hero {
+            padding: 160px 2rem 100px;
+            background:
+                radial-gradient(ellipse at 20% 80%, rgba(196, 144, 138, 0.08) 0%, transparent 50%),
+                radial-gradient(ellipse at 80% 20%, rgba(163, 177, 138, 0.06) 0%, transparent 50%),
+                linear-gradient(180deg, var(--blush-bg) 0%, var(--background) 100%);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .results-hero::before {
+            content: '';
+            position: absolute;
+            top: 15%;
+            right: -8%;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(196, 144, 138, 0.07) 0%, transparent 70%);
+            border-radius: 50%;
+            animation: gentlePulse 8s ease-in-out infinite;
+        }
+
+        .results-hero::after {
+            content: '';
+            position: absolute;
+            bottom: 10%;
+            left: -5%;
+            width: 350px;
+            height: 350px;
+            background: radial-gradient(circle, rgba(163, 177, 138, 0.06) 0%, transparent 70%);
+            border-radius: 50%;
+            animation: gentlePulse 10s ease-in-out infinite 2s;
+        }
+
+        .results-hero .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .results-hero .section-label {
+            margin-bottom: 1rem;
+        }
+
+        .results-hero h1 {
+            margin-bottom: 1.25rem;
+            animation: fadeSlideUp 0.6s ease 0.1s both;
+        }
+
+        .results-hero h1 em {
+            font-style: italic;
+            color: var(--primary);
+        }
+
+        .results-hero p {
+            max-width: 620px;
+            margin: 0 auto 3rem;
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            line-height: 1.8;
+        }
+
+        /* Stats Strip */
+        .stats-strip {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .stats-strip-item {
+            text-align: center;
+            padding: 0 1.5rem;
+            position: relative;
+        }
+
+        .stats-strip-item:not(:last-child)::after {
+            content: '';
+            position: absolute;
+            right: -1.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 1px;
+            height: 40px;
+            background: var(--border);
+        }
+
+        .stats-strip-number {
+            font-family: var(--font-display);
+            font-size: 1.8rem;
+            font-weight: 300;
+            color: var(--primary);
+            line-height: 1;
+            margin-bottom: 0.35rem;
+        }
+
+        .stats-strip-label {
+            font-size: 0.78rem;
+            font-weight: 500;
+            color: var(--text-muted);
+            letter-spacing: 0.5px;
+        }
+
+        /* ===== RESULTS SUMMARY (Quick Stats Grid) ===== */
+        .results-summary {
+            background: white;
+        }
+
+        .summary-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .summary-card {
+            text-align: center;
+            padding: 2.5rem 1.5rem;
+            background: var(--background);
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--border);
+            transition: all var(--transition-base);
+        }
+
+        .summary-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .summary-number {
+            font-family: var(--font-display);
+            font-size: 3rem;
+            font-weight: 300;
+            color: var(--primary);
+            line-height: 1;
+            margin-bottom: 0.75rem;
+        }
+
+        .summary-text {
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            line-height: 1.5;
+        }
+
+        /* ===== FEATURED TRANSFORMATIONS (Case Studies) ===== */
+        .case-study-section {
+            background: white;
+        }
+
+        .case-study-section.alt-bg {
+            background: var(--cream);
+        }
+
+        .case-study-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.3fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .case-study-grid.reversed {
+            grid-template-columns: 1.3fr 1fr;
+        }
+
+        .case-study-grid.reversed .case-study-image {
+            order: 2;
+        }
+
+        .case-study-grid.reversed .case-study-content {
+            order: 1;
+        }
+
+        .case-study-image {
+            position: relative;
+        }
+
+        .case-study-image img {
+            width: 100%;
+            aspect-ratio: 3/4;
+            object-fit: cover;
+            border-radius: var(--radius-xl);
+        }
+
+        .case-study-image::after {
+            content: '';
+            position: absolute;
+            bottom: -16px;
+            right: -16px;
+            width: 100px;
+            height: 100px;
+            background: var(--primary-light);
+            border-radius: var(--radius-xl);
+            z-index: -1;
+        }
+
+        .case-study-grid.reversed .case-study-image::after {
+            right: auto;
+            left: -16px;
+        }
+
+        .case-study-name {
+            font-family: var(--font-display);
+            font-size: 1.6rem;
+            font-weight: 400;
+            color: var(--secondary);
+            margin-bottom: 0.5rem;
+        }
+
+        .case-study-name em {
+            font-style: italic;
+            color: var(--primary);
+        }
+
+        .case-study-program {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 5px 14px;
+            background: var(--primary-light);
+            border-radius: var(--radius-full);
+            font-size: 0.72rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: var(--primary-dark);
+            margin-bottom: 2rem;
+        }
+
+        .case-study-phase {
+            margin-bottom: 1.5rem;
+        }
+
+        .case-study-phase-label {
+            font-size: 0.72rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 0.5rem;
+        }
+
+        .case-study-phase-label.before {
+            color: var(--text-light);
+        }
+
+        .case-study-phase-label.during {
+            color: var(--sage);
+        }
+
+        .case-study-phase-label.after {
+            color: var(--primary);
+        }
+
+        .case-study-phase p {
+            font-size: 0.92rem;
+            line-height: 1.7;
+            color: var(--text-muted);
+            font-style: italic;
+            font-family: var(--font-display);
+        }
+
+        .case-study-results {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .result-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 14px;
+            background: var(--sage-light);
+            color: #5A6E47;
+            border-radius: var(--radius-full);
+            font-size: 0.78rem;
+            font-weight: 600;
+        }
+
+        .result-pill svg {
+            width: 14px;
+            height: 14px;
+        }
+
+        /* ===== TESTIMONIAL WALL (Masonry Grid) ===== */
+        .wall-of-proof {
+            background: var(--blush-bg);
+        }
+
+        .proof-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+
+        .proof-card {
+            background: white;
+            border-radius: var(--radius-lg);
+            padding: 2rem;
+            border: 1px solid var(--border);
+            border-left: 3px solid var(--primary);
+            transition: all var(--transition-base);
+        }
+
+        .proof-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-md);
+        }
+
+        /* Masonry-style varied heights */
+        .proof-card:nth-child(2) { grid-row: span 1; }
+        .proof-card:nth-child(4) { grid-row: span 1; }
+        .proof-card:nth-child(7) { grid-row: span 1; }
+
+        .proof-stars {
+            display: flex;
+            gap: 2px;
+            margin-bottom: 1rem;
+        }
+
+        .proof-stars svg {
+            width: 14px;
+            height: 14px;
+            color: var(--terra);
+            fill: var(--terra);
+        }
+
+        .proof-card blockquote {
+            font-family: var(--font-display);
+            font-style: italic;
+            font-size: 0.95rem;
+            color: var(--text);
+            line-height: 1.7;
+            margin-bottom: 1.25rem;
+        }
+
+        .proof-author {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .proof-avatar {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: var(--cream);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            font-size: 0.72rem;
+            color: var(--primary);
+            flex-shrink: 0;
+        }
+
+        .proof-name {
+            font-weight: 600;
+            font-size: 0.82rem;
+            color: var(--secondary);
+        }
+
+        .proof-detail {
+            font-size: 0.72rem;
+            color: var(--text-light);
+        }
+
+        /* ===== CTA SECTION ===== */
+        .results-cta {
+            background:
+                linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: white;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .results-cta::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -20%;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.08) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .results-cta::after {
+            content: '';
+            position: absolute;
+            bottom: -30%;
+            right: -10%;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.05) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .results-cta .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .results-cta h2 {
+            color: white;
+            margin-bottom: 1rem;
+        }
+
+        .results-cta h2 em {
+            font-style: italic;
+        }
+
+        .results-cta p {
+            color: rgba(255, 255, 255, 0.8);
+            max-width: 520px;
+            margin: 0 auto 2.5rem;
+            font-size: 1.05rem;
+        }
+
+        .results-cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .results-cta .btn-white {
+            background: white;
+            color: var(--primary-dark);
+            padding: 14px 32px;
+            border-radius: var(--radius-full);
+            font-weight: 600;
+            font-size: 0.9rem;
+            display: inline-block;
+            transition: all var(--transition-base);
+            text-decoration: none;
+            font-family: var(--font-body);
+        }
+
+        .results-cta .btn-white:hover {
+            background: var(--cream);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+        }
+
+        .results-cta .btn-outline-white {
+            background: transparent;
+            border: 1.5px solid rgba(255, 255, 255, 0.4);
+            color: white;
+            padding: 14px 32px;
+            border-radius: var(--radius-full);
+            font-weight: 600;
+            font-size: 0.9rem;
+            display: inline-block;
+            transition: all var(--transition-base);
+            text-decoration: none;
+            font-family: var(--font-body);
+        }
+
+        .results-cta .btn-outline-white:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.6);
+            transform: translateY(-2px);
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 968px) {
+            .stats-strip {
+                gap: 2rem;
+            }
+
+            .stats-strip-item:not(:last-child)::after {
+                display: none;
+            }
+
+            .summary-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .case-study-grid,
+            .case-study-grid.reversed {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .case-study-grid.reversed .case-study-image {
+                order: 0;
+            }
+
+            .case-study-grid.reversed .case-study-content {
+                order: 0;
+            }
+
+            .case-study-image {
+                max-width: 400px;
+                margin: 0 auto;
+            }
+
+            .proof-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .results-hero {
+                padding: 120px 1rem 60px;
+            }
+
+            .stats-strip {
+                flex-direction: column;
+                gap: 1.5rem;
+            }
+
+            .summary-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .results-cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="../index.html" class="logo">Flores <span>Nutrition</span></a>
+            <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="../services/">Services</a></li>
+                    <li><a href="../about.html">About</a></li>
+                    <li><a href="../webinar/">Free Training</a></li>
+                    <li><a href="../results/">Results</a></li>
+                    <li><a href="../blog/">Blog</a></li>
+                    <li><a href="../apply/" class="btn btn-primary btn-sm">Apply Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="results-hero">
+        <div class="container">
+            <span class="section-label">Client Results</span>
+            <h1>Real Women, Real <em>Transformations</em></h1>
+            <p>Every story here represents a woman who chose to invest in herself. These are their journeys — in their own words.</p>
+
+            <div class="stats-strip">
+                <div class="stats-strip-item">
+                    <div class="stats-strip-number">200+</div>
+                    <div class="stats-strip-label">Women Transformed</div>
+                </div>
+                <div class="stats-strip-item">
+                    <div class="stats-strip-number">95%</div>
+                    <div class="stats-strip-label">Client Satisfaction</div>
+                </div>
+                <div class="stats-strip-item">
+                    <div class="stats-strip-number">12-Week</div>
+                    <div class="stats-strip-label">Average Program</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Summary — Quick Stats Grid -->
+    <section class="results-summary">
+        <div class="container text-center">
+            <span class="section-label">By the Numbers</span>
+            <h2 class="section-title">Results That <em>Speak</em></h2>
+            <p class="section-subtitle mx-auto">Our clients consistently report measurable improvements across energy, confidence, and lasting health outcomes.</p>
+
+            <div class="summary-grid">
+                <div class="summary-card">
+                    <div class="summary-number">93%</div>
+                    <div class="summary-text">Report increased energy within 2 weeks</div>
+                </div>
+                <div class="summary-card">
+                    <div class="summary-number">87%</div>
+                    <div class="summary-text">Maintain results 6+ months after program</div>
+                </div>
+                <div class="summary-card">
+                    <div class="summary-number">200+</div>
+                    <div class="summary-text">Women coached through holistic transformation</div>
+                </div>
+                <div class="summary-card">
+                    <div class="summary-number">4.9/5</div>
+                    <div class="summary-text">Average client satisfaction rating</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Transformation 1: Jessica M. -->
+    <section class="case-study-section">
+        <div class="container">
+            <div class="case-study-grid">
+                <div class="case-study-image">
+                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=400&q=80" alt="Jessica M. — Client transformation story" loading="lazy">
+                </div>
+                <div class="case-study-content">
+                    <h2 class="case-study-name">Jessica M. — <em>"From Yo-Yo Dieting to Food Freedom"</em></h2>
+                    <div class="case-study-program">The Nourished Woman Method (12 weeks)</div>
+
+                    <div class="case-study-phase">
+                        <div class="case-study-phase-label before">Before</div>
+                        <p>"I'd been on and off diets since college. I counted calories obsessively, then would binge on weekends. I was exhausted, bloated, and my relationship with food was making me miserable."</p>
+                    </div>
+
+                    <div class="case-study-phase">
+                        <div class="case-study-phase-label during">During</div>
+                        <p>"In week 3, something clicked. Ana helped me understand why I was craving sugar after dinner — it wasn't willpower, it was blood sugar regulation. She taught me to eat in a way that actually satisfied me."</p>
+                    </div>
+
+                    <div class="case-study-phase">
+                        <div class="case-study-phase-label after">After</div>
+                        <p>"I've lost 22 pounds, my bloodwork is perfect, and I actually enjoy cooking now. But the biggest change? I don't think about food 24/7 anymore. I eat well, I feel amazing, and I've kept the weight off for 8 months."</p>
+                    </div>
+
+                    <div class="case-study-results">
+                        <span class="result-pill">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
+                            Lost 22 lbs
+                        </span>
+                        <span class="result-pill">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
+                            Improved bloodwork
+                        </span>
+                        <span class="result-pill">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
+                            Maintained results 8+ months
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Transformation 2: Sofia C. -->
+    <section class="case-study-section alt-bg">
+        <div class="container">
+            <div class="case-study-grid reversed">
+                <div class="case-study-image">
+                    <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&w=400&q=80" alt="Sofia C. — Client transformation story" loading="lazy">
+                </div>
+                <div class="case-study-content">
+                    <h2 class="case-study-name">Sofia C. — <em>"Finding Confidence Through Nutrition"</em></h2>
+                    <div class="case-study-program">1:1 Coaching (6 months)</div>
+
+                    <div class="case-study-phase">
+                        <div class="case-study-phase-label before">Before</div>
+                        <p>"I'd been dealing with low energy, brain fog, and constant digestive issues. I'd seen 3 different doctors and tried elimination diets on my own, but nothing stuck."</p>
+                    </div>
+
+                    <div class="case-study-phase">
+                        <div class="case-study-phase-label during">During</div>
+                        <p>"Ana took a completely different approach. Instead of just removing foods, she focused on what I was missing — nutrients, sleep quality, stress management. It was holistic in the true sense."</p>
+                    </div>
+
+                    <div class="case-study-phase">
+                        <div class="case-study-phase-label after">After</div>
+                        <p>"My energy is through the roof. The brain fog is gone. My digestion has completely normalized. But honestly, the biggest transformation was my confidence. I trust my body now."</p>
+                    </div>
+
+                    <div class="case-study-results">
+                        <span class="result-pill">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
+                            Eliminated brain fog
+                        </span>
+                        <span class="result-pill">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
+                            Normalized digestion
+                        </span>
+                        <span class="result-pill">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
+                            Sustained energy levels
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Transformation 3: Laura R. -->
+    <section class="case-study-section">
+        <div class="container">
+            <div class="case-study-grid">
+                <div class="case-study-image">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=80" alt="Laura R. — Client transformation story" loading="lazy">
+                </div>
+                <div class="case-study-content">
+                    <h2 class="case-study-name">Laura R. — <em>"Healthy Eating for the Whole Family"</em></h2>
+                    <div class="case-study-program">Meal Planning + Lifestyle Transformation</div>
+
+                    <div class="case-study-phase">
+                        <div class="case-study-phase-label before">Before</div>
+                        <p>"As a busy mom of two, I was eating whatever was fastest — usually takeout or snacking on my kids' leftovers. I gained 35 pounds after my second baby and had zero energy."</p>
+                    </div>
+
+                    <div class="case-study-phase">
+                        <div class="case-study-phase-label during">During</div>
+                        <p>"Ana created meal plans that worked for the whole family. No separate 'diet food' — just real, delicious meals that were simple enough for weeknight cooking. She also helped me build meal prep habits."</p>
+                    </div>
+
+                    <div class="case-study-phase">
+                        <div class="case-study-phase-label after">After</div>
+                        <p>"I've lost 28 pounds and my whole family eats better. My kids actually ask for the recipes now. I meal prep on Sundays and feel in control of my week. My husband started following the plans too."</p>
+                    </div>
+
+                    <div class="case-study-results">
+                        <span class="result-pill">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
+                            Lost 28 lbs
+                        </span>
+                        <span class="result-pill">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
+                            Family eating healthier
+                        </span>
+                        <span class="result-pill">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
+                            Sustainable meal prep routine
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Wall — Wall of Proof -->
+    <section class="wall-of-proof">
+        <div class="container text-center">
+            <span class="section-label">Wall of Proof</span>
+            <h2 class="section-title">In Their Own <em>Words</em></h2>
+            <p class="section-subtitle mx-auto">Real feedback from real women who chose to invest in their health with Flores Nutrition.</p>
+
+            <div class="proof-grid">
+                <!-- Testimonial 1 -->
+                <div class="proof-card">
+                    <div class="proof-stars">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <blockquote>"Ana completely changed how I think about food. I went from constant yo-yo dieting to actually understanding and enjoying what I eat. I've never felt better."</blockquote>
+                    <div class="proof-author">
+                        <div class="proof-avatar">JM</div>
+                        <div>
+                            <div class="proof-name">Jessica M.</div>
+                            <div class="proof-detail">12-Week Program</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="proof-card">
+                    <div class="proof-stars">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <blockquote>"The holistic approach is what sets Ana apart. She helped me with my nutrition, but also my confidence, my energy, and my relationship with my own body."</blockquote>
+                    <div class="proof-author">
+                        <div class="proof-avatar">SC</div>
+                        <div>
+                            <div class="proof-name">Sofia C.</div>
+                            <div class="proof-detail">1:1 Coaching</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="proof-card">
+                    <div class="proof-stars">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <blockquote>"As a busy mom, I needed something realistic. Ana's meal plans were practical, delicious, and actually fit my life."</blockquote>
+                    <div class="proof-author">
+                        <div class="proof-avatar">LR</div>
+                        <div>
+                            <div class="proof-name">Laura R.</div>
+                            <div class="proof-detail">Meal Planning</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="proof-card">
+                    <div class="proof-stars">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <blockquote>"I was hesitant about the investment, but within the first month I stopped spending $400/month on random supplements and takeout. This program literally paid for itself."</blockquote>
+                    <div class="proof-author">
+                        <div class="proof-avatar">ML</div>
+                        <div>
+                            <div class="proof-name">Maria L.</div>
+                            <div class="proof-detail">Nourished Woman Method</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 5 -->
+                <div class="proof-card">
+                    <div class="proof-stars">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <blockquote>"I'd tried 3 different programs before this. Ana's approach was the first one that actually stuck because it wasn't just about food — it was about understanding myself."</blockquote>
+                    <div class="proof-author">
+                        <div class="proof-avatar">RK</div>
+                        <div>
+                            <div class="proof-name">Rachel K.</div>
+                            <div class="proof-detail">12-Week Program</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 6 -->
+                <div class="proof-card">
+                    <div class="proof-stars">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <blockquote>"My bloodwork improved so dramatically that my doctor asked what I was doing differently. That's when I knew this was real."</blockquote>
+                    <div class="proof-author">
+                        <div class="proof-avatar">AT</div>
+                        <div>
+                            <div class="proof-name">Amanda T.</div>
+                            <div class="proof-detail">1:1 Coaching</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 7 -->
+                <div class="proof-card">
+                    <div class="proof-stars">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <blockquote>"I came for the meal plans, but I stayed for the mindset coaching. Ana helped me break free from diet culture thinking."</blockquote>
+                    <div class="proof-author">
+                        <div class="proof-avatar">PS</div>
+                        <div>
+                            <div class="proof-name">Priya S.</div>
+                            <div class="proof-detail">Lifestyle Transformation</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 8 -->
+                <div class="proof-card">
+                    <div class="proof-stars">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <blockquote>"The community aspect was unexpected but incredible. Having other women on the same journey made all the difference."</blockquote>
+                    <div class="proof-author">
+                        <div class="proof-avatar">NB</div>
+                        <div>
+                            <div class="proof-name">Nicole B.</div>
+                            <div class="proof-detail">Group Program</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 9 -->
+                <div class="proof-card">
+                    <div class="proof-stars">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <blockquote>"I finally feel like I'm in control of my health, not the other way around. Ana gave me the tools and the confidence."</blockquote>
+                    <div class="proof-author">
+                        <div class="proof-avatar">SM</div>
+                        <div>
+                            <div class="proof-name">Sarah M.</div>
+                            <div class="proof-detail">12-Week Program</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 10 -->
+                <div class="proof-card">
+                    <div class="proof-stars">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <blockquote>"Best investment I've ever made in myself. Hands down. I wish I'd done this years ago."</blockquote>
+                    <div class="proof-author">
+                        <div class="proof-avatar">DW</div>
+                        <div>
+                            <div class="proof-name">Danielle W.</div>
+                            <div class="proof-detail">Nourished Woman Method</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="results-cta">
+        <div class="container text-center">
+            <span class="section-label" style="color: rgba(255,255,255,0.7);">Your Turn</span>
+            <h2>Ready to Write Your <em>Transformation Story</em>?</h2>
+            <p>Every success story started with a single step. Take yours today.</p>
+            <div class="results-cta-buttons">
+                <a href="../apply/" class="btn-white">Apply for Program</a>
+                <a href="../webinar/" class="btn-outline-white">Watch Free Training</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div>
+                <h4 style="text-transform: none; letter-spacing: 0; font-family: var(--font-display); font-size: 1.3rem; font-weight: 400; margin-bottom: 1rem;">Flores <span style="color: var(--primary);">Nutrition</span></h4>
+                <p class="footer-description">Holistic nutrition coaching for women. Helping you build confidence, awareness, and lasting health through personalized, evidence-based guidance.</p>
+                <div class="footer-email-capture">
+                    <p>Get weekly nutrition tips:</p>
+                    <form class="footer-email-form" action="#" method="POST">
+                        <input type="email" name="email" placeholder="Your email" required aria-label="Email address">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div>
+                <h4>Services</h4>
+                <a href="../services/">1:1 Coaching</a>
+                <a href="../services/">Meal Planning</a>
+                <a href="../services/">Group Programs</a>
+                <a href="../apply/">The Nourished Woman</a>
+                <a href="../corporate/">Corporate Wellness</a>
+            </div>
+            <div>
+                <h4>Company</h4>
+                <a href="../about.html">About Ana</a>
+                <a href="../blog/">Blog</a>
+                <a href="../index.html#contact">Contact</a>
+            </div>
+            <div>
+                <h4>Resources</h4>
+                <a href="../free-guide/">Free Meal Plan</a>
+                <a href="../webinar/">Free Training</a>
+                <a href="../blog/">Blog</a>
+                <a href="../results/">Client Results</a>
+                <a href="../sitemap.xml">Sitemap</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Flores Nutrition. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu JS -->
+    <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.nav-links');
+    if (toggle && nav) {
+        toggle.addEventListener('click', () => {
+            const expanded = toggle.getAttribute('aria-expanded') === 'true';
+            toggle.setAttribute('aria-expanded', !expanded);
+            nav.classList.toggle('active');
+        });
+    }
+    </script>
+
+</body>
+</html>

@@ -99,9 +99,233 @@
             flex-shrink: 0;
         }
 
-        /* Pricing */
+        /* ===== VALUE STACK SECTION ===== */
+        .value-stack-section {
+            background: linear-gradient(135deg, var(--dark-bg) 0%, #3a3530 100%);
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .value-stack-section::before {
+            content: '';
+            position: absolute;
+            top: -40%;
+            right: -15%;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(196, 144, 138, 0.08) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .value-stack-section::after {
+            content: '';
+            position: absolute;
+            bottom: -30%;
+            left: -10%;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(163, 177, 138, 0.06) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .value-stack-container {
+            position: relative;
+            z-index: 1;
+            max-width: 720px;
+            margin: 0 auto;
+        }
+
+        .value-stack-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .value-stack-header .section-label {
+            color: var(--primary);
+        }
+
+        .value-stack-header h2 {
+            color: white;
+            margin-bottom: 1rem;
+        }
+
+        .value-stack-header p {
+            color: rgba(255, 255, 255, 0.6);
+            max-width: 520px;
+            margin: 0 auto;
+            font-size: 0.95rem;
+        }
+
+        .value-stack-card {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: var(--radius-xl);
+            padding: 2.5rem;
+        }
+
+        .value-stack-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0.85rem 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+        }
+
+        .value-stack-item:last-of-type {
+            border-bottom: none;
+        }
+
+        .value-stack-item-name {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 0.95rem;
+            color: rgba(255, 255, 255, 0.85);
+        }
+
+        .value-stack-item-name svg {
+            width: 16px;
+            height: 16px;
+            color: var(--sage);
+            flex-shrink: 0;
+        }
+
+        .value-stack-item-value {
+            font-family: var(--font-display);
+            font-size: 1.1rem;
+            color: rgba(255, 255, 255, 0.5);
+            font-weight: 400;
+            white-space: nowrap;
+            margin-left: 1rem;
+        }
+
+        .value-stack-item.bonus .value-stack-item-name::before {
+            content: 'BONUS';
+            display: inline-block;
+            background: rgba(196, 144, 138, 0.2);
+            color: var(--primary);
+            font-size: 0.6rem;
+            font-weight: 700;
+            font-family: var(--font-body);
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            padding: 2px 8px;
+            border-radius: var(--radius-full);
+            margin-right: 4px;
+        }
+
+        .value-stack-divider {
+            height: 2px;
+            background: linear-gradient(90deg, transparent, rgba(196, 144, 138, 0.4), transparent);
+            margin: 1.25rem 0;
+        }
+
+        .value-stack-total {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0.75rem 0 0;
+        }
+
+        .value-stack-total-label {
+            font-size: 1rem;
+            font-weight: 600;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .value-stack-total-value {
+            font-family: var(--font-display);
+            font-size: 1.4rem;
+            color: rgba(255, 255, 255, 0.5);
+            text-decoration: line-through;
+        }
+
+        .value-stack-investment {
+            text-align: center;
+            margin-top: 2.5rem;
+        }
+
+        .value-stack-investment-label {
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2.5px;
+            color: rgba(255, 255, 255, 0.5);
+            margin-bottom: 0.5rem;
+        }
+
+        .value-stack-investment-price {
+            font-family: var(--font-display);
+            font-size: clamp(3rem, 6vw, 4rem);
+            font-weight: 300;
+            color: var(--primary);
+            line-height: 1.1;
+            margin-bottom: 0.75rem;
+        }
+
+        .value-stack-payment-options {
+            font-size: 0.88rem;
+            color: rgba(255, 255, 255, 0.5);
+            margin-bottom: 2rem;
+        }
+
+        .value-stack-payment-options span {
+            margin: 0 0.5rem;
+            opacity: 0.4;
+        }
+
+        .value-stack-cta {
+            display: flex;
+            justify-content: center;
+        }
+
+        /* ===== SOCIAL PROOF STRIP ===== */
+        .social-proof-strip {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 2.5rem;
+            padding: 1.5rem 2rem;
+            background: var(--cream);
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .social-proof-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: var(--text-muted);
+            letter-spacing: 0.3px;
+        }
+
+        .social-proof-item svg {
+            width: 18px;
+            height: 18px;
+            color: var(--primary);
+            flex-shrink: 0;
+        }
+
+        .social-proof-item strong {
+            color: var(--secondary);
+        }
+
+        /* ===== PRICING ===== */
         .pricing-section {
             background: var(--blush-bg);
+        }
+
+        .pricing-anchor {
+            max-width: 640px;
+            margin: 0 auto 0.5rem;
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            line-height: 1.8;
+            font-style: italic;
         }
 
         .pricing-grid {
@@ -155,7 +379,14 @@
         .pricing-period {
             font-size: 0.8rem;
             color: var(--text-light);
-            margin-bottom: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .pricing-payment-plans {
+            font-size: 0.78rem;
+            color: var(--text-light);
+            line-height: 1.6;
+            margin-bottom: 1rem;
         }
 
         .pricing-features {
@@ -180,6 +411,94 @@
             flex-shrink: 0;
         }
 
+        .limited-spots-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: var(--cream);
+            border: 1.5px solid var(--border-warm);
+            border-radius: var(--radius-full);
+            padding: 10px 24px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--primary-dark);
+            width: 100%;
+            justify-content: center;
+        }
+
+        .limited-spots-badge svg {
+            width: 16px;
+            height: 16px;
+            color: var(--primary);
+        }
+
+        /* ===== HOW IT WORKS ===== */
+        .how-it-works-section {
+            background: white;
+        }
+
+        .how-it-works-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 3rem;
+            position: relative;
+        }
+
+        /* Connecting line */
+        .how-it-works-grid::before {
+            content: '';
+            position: absolute;
+            top: 48px;
+            left: calc(16.66% + 1rem);
+            right: calc(16.66% + 1rem);
+            height: 2px;
+            background: linear-gradient(90deg, var(--primary), var(--sage), var(--primary));
+            opacity: 0.3;
+            z-index: 0;
+        }
+
+        .how-it-works-card {
+            text-align: center;
+            padding: 2rem 1.5rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .how-it-works-number {
+            width: 64px;
+            height: 64px;
+            background: var(--blush-bg);
+            border: 2px solid var(--primary);
+            border-radius: var(--radius-circle);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: var(--primary);
+        }
+
+        .how-it-works-card h3 {
+            margin-bottom: 0.75rem;
+            font-size: 1.3rem;
+        }
+
+        .how-it-works-card p {
+            font-size: 0.9rem;
+            line-height: 1.7;
+            color: var(--text-muted);
+            max-width: 280px;
+            margin: 0 auto;
+        }
+
+        /* Arrow between cards (desktop only) */
+        .how-it-works-arrow {
+            display: none;
+        }
+
         /* CTA */
         .services-cta {
             background: var(--dark-bg);
@@ -190,10 +509,22 @@
         .services-cta h2 { color: white; }
         .services-cta p { color: rgba(255,255,255,0.65); max-width: 520px; margin: 0 auto 2rem; }
 
+        /* ===== RESPONSIVE ===== */
         @media (max-width: 968px) {
             .service-detail-grid { grid-template-columns: 1fr; gap: 40px; }
             .service-detail:nth-child(even) .service-detail-grid { direction: ltr; }
             .pricing-grid { grid-template-columns: 1fr 1fr; }
+            .how-it-works-grid::before { display: none; }
+            .social-proof-strip { gap: 1.5rem; }
+        }
+
+        @media (max-width: 768px) {
+            .how-it-works-grid { grid-template-columns: 1fr; max-width: 400px; margin-left: auto; margin-right: auto; }
+            .value-stack-card { padding: 1.5rem; }
+            .value-stack-item { flex-direction: column; align-items: flex-start; gap: 0.25rem; }
+            .value-stack-item-value { margin-left: 28px; }
+            .value-stack-total { flex-direction: column; align-items: flex-start; gap: 0.25rem; }
+            .social-proof-strip { flex-direction: column; gap: 0.75rem; text-align: center; }
         }
 
         @media (max-width: 600px) {
@@ -215,6 +546,7 @@
                     <li><a href="../services/">Services</a></li>
                     <li><a href="../about.html">About</a></li>
                     <li><a href="../webinar/">Free Training</a></li>
+                    <li><a href="../results/">Results</a></li>
                     <li><a href="../blog/">Blog</a></li>
                     <li><a href="../apply/" class="btn btn-primary btn-sm">Apply Now</a></li>
                 </ul>
@@ -298,12 +630,141 @@
         </div>
     </section>
 
+    <!-- Value Stack: The Nourished Woman Method -->
+    <section class="value-stack-section">
+        <div class="container">
+            <div class="value-stack-container">
+                <div class="value-stack-header">
+                    <span class="section-label">Signature Program</span>
+                    <h2>Everything Inside The Nourished Woman <em>Method</em></h2>
+                    <p>A complete transformation system designed to give you the tools, support, and accountability to change your health for good.</p>
+                </div>
+
+                <div class="value-stack-card">
+                    <!-- Line Items -->
+                    <div class="value-stack-item">
+                        <div class="value-stack-item-name">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
+                            12 Weekly 1:1 Coaching Sessions ($200/ea)
+                        </div>
+                        <div class="value-stack-item-value">$2,400</div>
+                    </div>
+
+                    <div class="value-stack-item">
+                        <div class="value-stack-item-name">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
+                            Custom Macro & Meal Plan
+                        </div>
+                        <div class="value-stack-item-value">$500</div>
+                    </div>
+
+                    <div class="value-stack-item">
+                        <div class="value-stack-item-name">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
+                            Private Community Access (12 weeks)
+                        </div>
+                        <div class="value-stack-item-value">$300</div>
+                    </div>
+
+                    <div class="value-stack-item">
+                        <div class="value-stack-item-name">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
+                            Recipe Library & Grocery Lists
+                        </div>
+                        <div class="value-stack-item-value">$197</div>
+                    </div>
+
+                    <div class="value-stack-item">
+                        <div class="value-stack-item-name">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
+                            Mindset & Habit Formation Workbook
+                        </div>
+                        <div class="value-stack-item-value">$97</div>
+                    </div>
+
+                    <div class="value-stack-item">
+                        <div class="value-stack-item-name">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
+                            Weekly Accountability Check-ins
+                        </div>
+                        <div class="value-stack-item-value">$600</div>
+                    </div>
+
+                    <div class="value-stack-item">
+                        <div class="value-stack-item-name">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
+                            30-Day Post-Program Support
+                        </div>
+                        <div class="value-stack-item-value">$300</div>
+                    </div>
+
+                    <!-- Bonus Items -->
+                    <div class="value-stack-item bonus">
+                        <div class="value-stack-item-name">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
+                            Pantry Reset Guide
+                        </div>
+                        <div class="value-stack-item-value">$47</div>
+                    </div>
+
+                    <div class="value-stack-item bonus">
+                        <div class="value-stack-item-name">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
+                            Eating Out Strategy Guide
+                        </div>
+                        <div class="value-stack-item-value">$47</div>
+                    </div>
+
+                    <!-- Divider -->
+                    <div class="value-stack-divider"></div>
+
+                    <!-- Total -->
+                    <div class="value-stack-total">
+                        <div class="value-stack-total-label">Total Value</div>
+                        <div class="value-stack-total-value">$4,488</div>
+                    </div>
+                </div>
+
+                <!-- Investment Price -->
+                <div class="value-stack-investment">
+                    <div class="value-stack-investment-label">Your Investment</div>
+                    <div class="value-stack-investment-price">$2,497</div>
+                    <div class="value-stack-payment-options">
+                        or 3 payments of $899 <span>|</span> or 6 payments of $467
+                    </div>
+                    <div class="value-stack-cta">
+                        <a href="../apply/" class="btn btn-primary btn-lg">Apply Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof Strip -->
+    <div class="social-proof-strip">
+        <div class="social-proof-item">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z"/></svg>
+            Trusted by <strong>200+ women</strong>
+        </div>
+        <div class="social-proof-item">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"/></svg>
+            <strong>95%</strong> client satisfaction
+        </div>
+        <div class="social-proof-item">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/></svg>
+            Results in as little as <strong>2 weeks</strong>
+        </div>
+    </div>
+
     <!-- Pricing Ladder -->
     <section class="pricing-section">
         <div class="container text-center">
             <span class="section-label">Investment in Yourself</span>
             <h2 class="section-title">Choose Your <em>Path</em></h2>
             <p class="section-subtitle mx-auto">Start wherever feels right. Every path leads to a healthier, more confident you.</p>
+
+            <!-- Price Anchoring Copy -->
+            <p class="pricing-anchor">Most women spend $5,000+ over 2-3 years on random supplements, diet plans, and programs that don't deliver lasting results. Every path below is designed to actually work — so you can stop spending on solutions that don't.</p>
 
             <div class="pricing-grid">
                 <!-- Tier 1: Digital Products -->
@@ -357,13 +818,49 @@
                     <p style="font-size: 0.85rem;">The complete 12-week transformation.</p>
                     <div class="pricing-price">$2,497</div>
                     <div class="pricing-period">12-week program</div>
+                    <div class="pricing-payment-plans">
+                        or 3 payments of $899<br>
+                        or 6 payments of $467
+                    </div>
                     <ul class="pricing-features">
                         <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg> Everything in 1:1 Coaching</li>
                         <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg> Private community access</li>
                         <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg> Course materials & workbooks</li>
                         <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg> Lifetime access</li>
                     </ul>
-                    <a href="../apply/" class="btn btn-secondary" style="width: 100%;">Apply Now</a>
+                    <div class="limited-spots-badge">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>
+                        Limited Spots Available
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works-section">
+        <div class="container text-center">
+            <span class="section-label">Your Journey</span>
+            <h2 class="section-title">How It <em>Works</em></h2>
+            <p class="section-subtitle mx-auto">Getting started is simple. Three steps to begin your transformation.</p>
+
+            <div class="how-it-works-grid">
+                <div class="how-it-works-card">
+                    <div class="how-it-works-number">1</div>
+                    <h3>Apply</h3>
+                    <p>Submit your application and tell us about your goals, current challenges, and what you're hoping to achieve.</p>
+                </div>
+
+                <div class="how-it-works-card">
+                    <div class="how-it-works-number">2</div>
+                    <h3>Discovery Call</h3>
+                    <p>If accepted, schedule a free 20-minute call with Ana to ensure the program is the right fit for you.</p>
+                </div>
+
+                <div class="how-it-works-card">
+                    <div class="how-it-works-number">3</div>
+                    <h3>Transform</h3>
+                    <p>Begin your 12-week transformation journey with personalized coaching, community support, and proven frameworks.</p>
                 </div>
             </div>
         </div>
@@ -394,6 +891,7 @@
                 <a href="../services/">Meal Planning</a>
                 <a href="../services/">Group Programs</a>
                 <a href="../apply/">The Nourished Woman</a>
+                <a href="../corporate/">Corporate Wellness</a>
             </div>
             <div>
                 <h4>Company</h4>
@@ -406,6 +904,7 @@
                 <a href="../free-guide/">Free Meal Plan</a>
                 <a href="../webinar/">Free Training</a>
                 <a href="../blog/">Blog</a>
+                <a href="../results/">Client Results</a>
                 <a href="../sitemap.xml">Sitemap</a>
             </div>
         </div>

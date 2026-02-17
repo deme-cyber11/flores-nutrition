@@ -62,7 +62,7 @@
             margin: 0 auto;
         }
 
-        /* Left Column — Program Overview */
+        /* Left Column — Program Overview / Value Stack */
         .program-overview h2 {
             font-family: var(--font-display);
             font-size: 1.6rem;
@@ -71,40 +71,109 @@
             color: var(--text);
         }
 
-        .feature-list {
-            list-style: none;
-            padding: 0;
-            margin: 0 0 2.5rem 0;
+        /* Value Stack Card */
+        .value-stack-card {
+            background: var(--cream);
+            border-radius: var(--radius-xl);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border: 1px solid var(--border);
         }
 
-        .feature-list li {
+        .value-stack-card h3 {
+            font-family: var(--font-display);
+            font-size: 1.25rem;
+            font-weight: 500;
+            margin-bottom: 1.5rem;
+            color: var(--text);
+        }
+
+        .value-line {
             display: flex;
             align-items: flex-start;
-            gap: 0.75rem;
-            padding: 0.6rem 0;
-            font-size: 0.95rem;
+            justify-content: space-between;
+            padding: 0.5rem 0;
+            font-size: 0.9rem;
             color: var(--text);
             line-height: 1.5;
         }
 
-        .feature-list li svg {
-            width: 20px;
-            height: 20px;
-            flex-shrink: 0;
+        .value-line .value-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.6rem;
+            flex: 1;
+        }
+
+        .value-line .value-check {
             color: var(--sage);
+            flex-shrink: 0;
+            font-size: 1rem;
             margin-top: 1px;
         }
 
+        .value-line .value-amount {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            white-space: nowrap;
+            margin-left: 1rem;
+            min-width: 55px;
+            text-align: right;
+        }
+
+        .value-line.bonus .value-item {
+            font-weight: 500;
+        }
+
+        .value-divider {
+            border: none;
+            border-top: 1px solid rgba(45, 42, 38, 0.1);
+            margin: 0.75rem 0;
+        }
+
+        .value-total {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 0.5rem;
+        }
+
+        .value-total-label {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--text);
+        }
+
+        .value-total-amount {
+            font-family: var(--font-display);
+            font-size: 1.4rem;
+            font-weight: 500;
+            color: var(--text-muted);
+            text-decoration: line-through;
+        }
+
+        /* Investment Block */
         .investment-block {
-            background: var(--cream);
+            background: var(--blush-bg);
             border-radius: var(--radius-lg);
-            padding: 1.75rem 2rem;
+            padding: 2rem;
             margin-bottom: 2rem;
+            text-align: center;
+            border: 1px solid var(--border-warm);
+        }
+
+        .investment-block .investment-label {
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--primary-dark);
+            margin-bottom: 0.25rem;
         }
 
         .investment-block .price {
             font-family: var(--font-display);
-            font-size: 2rem;
+            font-size: 2.5rem;
             font-weight: 500;
             color: var(--text);
             margin-bottom: 0.25rem;
@@ -115,11 +184,71 @@
             color: var(--text-muted);
         }
 
+        /* Payment Plans */
+        .payment-plans {
+            margin-bottom: 2rem;
+        }
+
+        .payment-plans h3 {
+            font-family: var(--font-display);
+            font-size: 1.15rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+            color: var(--text);
+        }
+
+        .payment-option {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0.9rem 1.25rem;
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: var(--radius-md);
+            margin-bottom: 0.5rem;
+            transition: border-color 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .payment-option:hover {
+            border-color: var(--primary);
+            box-shadow: 0 2px 8px rgba(196, 144, 138, 0.1);
+        }
+
+        .payment-option .plan-name {
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--text);
+        }
+
+        .payment-option .plan-price {
+            font-family: var(--font-display);
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: var(--text);
+        }
+
+        .payment-option .plan-savings {
+            font-size: 0.75rem;
+            color: var(--sage);
+            font-weight: 600;
+            background: var(--sage-light);
+            padding: 2px 8px;
+            border-radius: var(--radius-full);
+            margin-left: 0.5rem;
+        }
+
+        .payment-option .plan-details {
+            display: flex;
+            align-items: center;
+        }
+
+        /* Testimonials */
         .testimonial-card {
             background: var(--blush-bg);
             border-radius: var(--radius-lg);
             padding: 2rem;
             border-left: 3px solid var(--primary);
+            margin-bottom: 1rem;
         }
 
         .testimonial-card blockquote {
@@ -159,6 +288,41 @@
             margin-bottom: 2rem;
         }
 
+        /* Form Section Headers */
+        .form-section {
+            margin-bottom: 1.75rem;
+        }
+
+        .form-section-header {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 1.25rem;
+            padding-bottom: 0.6rem;
+            border-bottom: 1px solid rgba(196, 144, 138, 0.2);
+        }
+
+        .form-section-number {
+            width: 28px;
+            height: 28px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--primary);
+            color: white;
+            border-radius: var(--radius-circle);
+            font-size: 0.75rem;
+            font-weight: 600;
+            flex-shrink: 0;
+        }
+
+        .form-section-title {
+            font-family: var(--font-display);
+            font-size: 1.15rem;
+            font-weight: 500;
+            color: var(--text);
+        }
+
         .form-group {
             margin-bottom: 1.25rem;
         }
@@ -175,6 +339,13 @@
             font-weight: 500;
             color: var(--text);
             margin-bottom: 0.4rem;
+            line-height: 1.5;
+        }
+
+        .form-group .label-optional {
+            font-weight: 400;
+            color: var(--text-muted);
+            font-size: 0.8rem;
         }
 
         .form-group input,
@@ -376,8 +547,35 @@
                 grid-template-columns: 1fr;
             }
 
+            .value-stack-card {
+                padding: 1.5rem;
+            }
+
+            .value-line {
+                font-size: 0.82rem;
+            }
+
+            .value-line .value-amount {
+                font-size: 0.8rem;
+            }
+
             .investment-block {
-                padding: 1.25rem 1.5rem;
+                padding: 1.5rem;
+            }
+
+            .investment-block .price {
+                font-size: 2rem;
+            }
+
+            .payment-option {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.25rem;
+                padding: 0.75rem 1rem;
+            }
+
+            .payment-option .plan-details {
+                flex-wrap: wrap;
             }
 
             .testimonial-card {
@@ -396,6 +594,14 @@
             .faq-list details .faq-answer {
                 padding: 0 1.25rem 1rem;
             }
+
+            .form-section-header {
+                gap: 0.5rem;
+            }
+
+            .form-section-title {
+                font-size: 1.05rem;
+            }
         }
     </style>
 </head>
@@ -413,6 +619,7 @@
                     <li><a href="../services/">Services</a></li>
                     <li><a href="../about.html">About</a></li>
                     <li><a href="../webinar/">Free Training</a></li>
+                    <li><a href="../results/">Results</a></li>
                     <li><a href="../blog/">Blog</a></li>
                     <li><a href="../apply/" class="btn btn-primary btn-sm">Apply Now</a></li>
                 </ul>
@@ -432,45 +639,142 @@
     <section class="apply-section">
         <div class="apply-grid">
 
-            <!-- Left Column — Program Overview -->
+            <!-- Left Column — Value Stack & Social Proof -->
             <div class="program-overview">
                 <h2>What's <em>Included</em></h2>
 
-                <ul class="feature-list">
-                    <li>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
-                        12 weekly live coaching sessions with Ana
-                    </li>
-                    <li>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
-                        Personalized nutrition & meal plans
-                    </li>
-                    <li>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
-                        Private community of like-minded women
-                    </li>
-                    <li>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
-                        Downloadable workbooks & recipe guides
-                    </li>
-                    <li>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
-                        Ongoing chat support between sessions
-                    </li>
-                    <li>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
-                        Lifetime access to course materials
-                    </li>
-                </ul>
+                <!-- Value Stack Card -->
+                <div class="value-stack-card">
+                    <h3>The Nourished Woman Method</h3>
 
+                    <div class="value-line">
+                        <span class="value-item">
+                            <span class="value-check">&#10003;</span>
+                            12 Weekly 1:1 Coaching Sessions ($200/ea)
+                        </span>
+                        <span class="value-amount">$2,400</span>
+                    </div>
+
+                    <div class="value-line">
+                        <span class="value-item">
+                            <span class="value-check">&#10003;</span>
+                            Custom Macro &amp; Meal Plan
+                        </span>
+                        <span class="value-amount">$500</span>
+                    </div>
+
+                    <div class="value-line">
+                        <span class="value-item">
+                            <span class="value-check">&#10003;</span>
+                            Private Community Access (12 weeks)
+                        </span>
+                        <span class="value-amount">$300</span>
+                    </div>
+
+                    <div class="value-line">
+                        <span class="value-item">
+                            <span class="value-check">&#10003;</span>
+                            Recipe Library &amp; Grocery Lists
+                        </span>
+                        <span class="value-amount">$197</span>
+                    </div>
+
+                    <div class="value-line">
+                        <span class="value-item">
+                            <span class="value-check">&#10003;</span>
+                            Mindset &amp; Habit Formation Workbook
+                        </span>
+                        <span class="value-amount">$97</span>
+                    </div>
+
+                    <div class="value-line">
+                        <span class="value-item">
+                            <span class="value-check">&#10003;</span>
+                            Weekly Accountability Check-ins
+                        </span>
+                        <span class="value-amount">$600</span>
+                    </div>
+
+                    <div class="value-line">
+                        <span class="value-item">
+                            <span class="value-check">&#10003;</span>
+                            30-Day Post-Program Support
+                        </span>
+                        <span class="value-amount">$300</span>
+                    </div>
+
+                    <div class="value-line bonus">
+                        <span class="value-item">
+                            <span class="value-check">&#10003;</span>
+                            BONUS: Pantry Reset Guide
+                        </span>
+                        <span class="value-amount">$47</span>
+                    </div>
+
+                    <div class="value-line bonus">
+                        <span class="value-item">
+                            <span class="value-check">&#10003;</span>
+                            BONUS: Eating Out Strategy Guide
+                        </span>
+                        <span class="value-amount">$47</span>
+                    </div>
+
+                    <hr class="value-divider">
+
+                    <div class="value-total">
+                        <span class="value-total-label">Total Value:</span>
+                        <span class="value-total-amount">$4,488</span>
+                    </div>
+                </div>
+
+                <!-- Investment Block -->
                 <div class="investment-block">
-                    <div class="price">Investment: $2,497</div>
+                    <div class="investment-label">Your Investment</div>
+                    <div class="price">$2,497</div>
                     <div class="price-alt">or 3 payments of $899</div>
                 </div>
 
+                <!-- Payment Plans -->
+                <div class="payment-plans">
+                    <h3>Flexible Payment <em>Options</em></h3>
+
+                    <div class="payment-option">
+                        <span class="plan-name">Pay in Full</span>
+                        <span class="plan-details">
+                            <span class="plan-price">$2,497</span>
+                            <span class="plan-savings">Save $200</span>
+                        </span>
+                    </div>
+
+                    <div class="payment-option">
+                        <span class="plan-name">3 Monthly Payments</span>
+                        <span class="plan-details">
+                            <span class="plan-price">$899/mo</span>
+                        </span>
+                    </div>
+
+                    <div class="payment-option">
+                        <span class="plan-name">6 Monthly Payments</span>
+                        <span class="plan-details">
+                            <span class="plan-price">$467/mo</span>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Testimonials -->
                 <div class="testimonial-card">
                     <blockquote>"Ana completely changed how I think about food. I went from constant yo-yo dieting to actually understanding and enjoying what I eat."</blockquote>
                     <cite>Jessica M.</cite>
+                </div>
+
+                <div class="testimonial-card">
+                    <blockquote>"I was hesitant about the investment, but within the first month I stopped spending $400/month on random supplements and takeout. This program literally paid for itself."</blockquote>
+                    <cite>Maria L.</cite>
+                </div>
+
+                <div class="testimonial-card">
+                    <blockquote>"I'd tried 3 different programs before this. Ana's approach was the first one that actually stuck because it wasn't just about food — it was about understanding myself."</blockquote>
+                    <cite>Rachel K.</cite>
                 </div>
             </div>
 
@@ -480,70 +784,161 @@
                 <p class="form-intro">Fill out the form below and Ana will personally review your application within 48 hours.</p>
 
                 <form action="#" method="POST">
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="first-name">First Name</label>
-                            <input type="text" id="first-name" name="first_name" placeholder="Your first name" required>
+
+                    <!-- Section 1: About You -->
+                    <div class="form-section">
+                        <div class="form-section-header">
+                            <span class="form-section-number">1</span>
+                            <span class="form-section-title">About You</span>
                         </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="first-name">First Name</label>
+                                <input type="text" id="first-name" name="first_name" placeholder="Your first name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="last-name">Last Name</label>
+                                <input type="text" id="last-name" name="last_name" placeholder="Your last name" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567" required>
+                            </div>
+                        </div>
+
                         <div class="form-group">
-                            <label for="last-name">Last Name</label>
-                            <input type="text" id="last-name" name="last_name" placeholder="Your last name" required>
+                            <label for="current-situation">Tell me about your current health and nutrition situation.</label>
+                            <textarea id="current-situation" name="current_situation" placeholder="Where are you right now with your health and nutrition? What does a typical day look like for you..." required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="struggle-duration">How long have you been struggling with this?</label>
+                            <select id="struggle-duration" name="struggle_duration" required>
+                                <option value="" disabled selected>Select a timeframe</option>
+                                <option value="less-than-6-months">Less than 6 months</option>
+                                <option value="6-12-months">6-12 months</option>
+                                <option value="1-2-years">1-2 years</option>
+                                <option value="3-5-years">3-5 years</option>
+                                <option value="5-plus-years">5+ years</option>
+                            </select>
                         </div>
                     </div>
 
-                    <div class="form-group">
-                        <label for="email">Email Address</label>
-                        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                    <!-- Section 2: Your Journey -->
+                    <div class="form-section">
+                        <div class="form-section-header">
+                            <span class="form-section-number">2</span>
+                            <span class="form-section-title">Your Journey</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="challenge-cost">What has this challenge cost you — physically, emotionally, in your relationships or career?</label>
+                            <textarea id="challenge-cost" name="challenge_cost" placeholder="Think about the toll this has taken on different areas of your life..." required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="tried-before">What have you already tried that hasn't worked?</label>
+                            <textarea id="tried-before" name="tried_before" placeholder="Diets, programs, supplements, approaches you've tried in the past..." required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="commitment-level">On a scale of 1-10, how committed are you to making a change in the next 90 days?</label>
+                            <select id="commitment-level" name="commitment_level" required>
+                                <option value="" disabled selected>Select your commitment level</option>
+                                <option value="1">1 — Just exploring</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 — Somewhat committed</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10 — Fully committed</option>
+                            </select>
+                        </div>
                     </div>
 
-                    <div class="form-group">
-                        <label for="phone">Phone Number</label>
-                        <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567" required>
+                    <!-- Section 3: Your Vision -->
+                    <div class="form-section">
+                        <div class="form-section-header">
+                            <span class="form-section-number">3</span>
+                            <span class="form-section-title">Your Vision</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="future-vision">If we worked together and this program delivered everything you needed, what would your life look like 12 weeks from now?</label>
+                            <textarea id="future-vision" name="future_vision" placeholder="Paint a picture of your ideal outcome — how you'd feel, what you'd be doing differently..." required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="why-now">Why is NOW the right time to invest in your health?</label>
+                            <textarea id="why-now" name="why_now" placeholder="What's driving you to take action right now..." required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="meaning">What would it mean to you to finally solve this?</label>
+                            <textarea id="meaning" name="meaning" placeholder="How would your life change if this was no longer a struggle..." required></textarea>
+                        </div>
                     </div>
 
-                    <div class="form-group">
-                        <label for="goals">What are your top health & nutrition goals?</label>
-                        <textarea id="goals" name="goals" placeholder="Tell us about the changes you'd like to make..." required></textarea>
-                    </div>
+                    <!-- Section 4: Next Steps -->
+                    <div class="form-section">
+                        <div class="form-section-header">
+                            <span class="form-section-number">4</span>
+                            <span class="form-section-title">Next Steps</span>
+                        </div>
 
-                    <div class="form-group">
-                        <label for="tried-before">What have you tried before that hasn't worked?</label>
-                        <textarea id="tried-before" name="tried_before" placeholder="Diets, programs, approaches you've tried in the past..." required></textarea>
-                    </div>
+                        <div class="form-group">
+                            <label for="invest-ready">Are you ready to invest in yourself at a level that matches your commitment?</label>
+                            <select id="invest-ready" name="invest_ready" required>
+                                <option value="" disabled selected>Select one</option>
+                                <option value="yes-absolutely">Yes, absolutely</option>
+                                <option value="exploring">I'm exploring my options</option>
+                                <option value="need-to-think">I need to think about it</option>
+                            </select>
+                        </div>
 
-                    <div class="form-group">
-                        <label for="readiness">On a scale of 1-10, how ready are you to invest in your health transformation?</label>
-                        <select id="readiness" name="readiness" required>
-                            <option value="" disabled selected>Select your readiness level</option>
-                            <option value="1">1 — Just exploring</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5 — Somewhat ready</option>
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                            <option value="8">8</option>
-                            <option value="9">9</option>
-                            <option value="10">10 — Fully committed</option>
-                        </select>
-                    </div>
+                        <div class="form-group">
+                            <label for="start-timeline">If accepted, are you prepared to start within the next 2 weeks?</label>
+                            <select id="start-timeline" name="start_timeline" required>
+                                <option value="" disabled selected>Select one</option>
+                                <option value="yes">Yes</option>
+                                <option value="possibly">Possibly</option>
+                                <option value="need-more-time">I need more time</option>
+                            </select>
+                        </div>
 
-                    <div class="form-group">
-                        <label for="referral">How did you hear about us?</label>
-                        <select id="referral" name="referral" required>
-                            <option value="" disabled selected>Select one</option>
-                            <option value="instagram">Instagram</option>
-                            <option value="friend">Friend / Referral</option>
-                            <option value="google">Google</option>
-                            <option value="webinar">Webinar</option>
-                            <option value="blog">Blog</option>
-                            <option value="other">Other</option>
-                        </select>
+                        <div class="form-group">
+                            <label for="anything-else">Is there anything else you'd like me to know before your call? <span class="label-optional">(Optional)</span></label>
+                            <textarea id="anything-else" name="anything_else" placeholder="Share anything else that feels important..."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="referral">How did you hear about us?</label>
+                            <select id="referral" name="referral" required>
+                                <option value="" disabled selected>Select one</option>
+                                <option value="instagram">Instagram</option>
+                                <option value="friend">Friend / Referral</option>
+                                <option value="google">Google</option>
+                                <option value="webinar">Webinar</option>
+                                <option value="blog">Blog</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
                     </div>
 
                     <button type="submit" class="form-submit-btn">Submit My Application</button>
 
-                    <p class="form-privacy">Your information is confidential and will only be used to evaluate your application.</p>
+                    <p class="form-privacy">Your information is confidential and will only be used to evaluate your application. Ana personally reviews every submission.</p>
                 </form>
             </div>
 
@@ -567,30 +962,37 @@
                 </details>
 
                 <details>
-                    <summary>What's the time commitment?</summary>
+                    <summary>Is this really worth the investment?</summary>
                     <div class="faq-answer">
-                        <p>Plan for 3-4 hours per week: one live coaching session plus implementation of your personalized plan. The program is designed to fit into a busy lifestyle, and Ana will work with you to create a plan that's sustainable for your schedule.</p>
+                        <p>Most of our clients had already spent $3,000-$5,000 on diets, supplements, and programs that didn't get them lasting results before finding us. The Nourished Woman Method is designed to be the last program you'll ever need — a comprehensive transformation that addresses the root causes, not just the symptoms. At $29.73 per day, it's less than most women spend on takeout and coffee.</p>
                     </div>
                 </details>
 
                 <details>
-                    <summary>Is this program right for me if I have dietary restrictions?</summary>
+                    <summary>What if I'm not sure I'm ready?</summary>
                     <div class="faq-answer">
-                        <p>Absolutely. Every plan is fully personalized to your needs, allergies, and preferences. Whether you're vegetarian, gluten-free, dairy-free, or managing a specific condition, Ana will tailor everything to work for you.</p>
+                        <p>The women who get the best results are the ones who decide to start before they feel "ready." Waiting for the "perfect time" usually means waiting forever. If you're here reading this, something is already telling you it's time for a change.</p>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>I've tried everything and nothing works.</summary>
+                    <div class="faq-answer">
+                        <p>That's exactly why this program is different. Most of our clients are smart, capable women who've tried everything. What they needed wasn't more information — it was the right guidance, accountability, and a holistic approach that addresses mindset alongside nutrition.</p>
                     </div>
                 </details>
 
                 <details>
                     <summary>What happens after I apply?</summary>
                     <div class="faq-answer">
-                        <p>Ana personally reviews every application. If it's a good fit, you'll be invited to a free 15-minute discovery call to discuss your goals, answer any questions, and make sure the program is the right next step for you.</p>
+                        <p>Ana personally reviews every application. If it's a good fit, you'll be invited to a free 15-minute discovery call to discuss your goals, answer any questions, and make sure the program is the right next step for you. You'll also receive a detailed program overview email so you can review everything before your call.</p>
                     </div>
                 </details>
 
                 <details>
                     <summary>Do you offer payment plans?</summary>
                     <div class="faq-answer">
-                        <p>Yes, we offer 3 monthly payments of $899 as an alternative to the full $2,497 investment. Payment plan details will be discussed during your discovery call so we can find the option that works best for you.</p>
+                        <p>Yes, we offer flexible payment options to make the program accessible. You can pay in full for $2,497 (and save $200), choose 3 monthly payments of $899, or 6 monthly payments of $467. Payment plan details will be discussed during your discovery call so we can find the option that works best for you.</p>
                     </div>
                 </details>
             </div>
@@ -610,6 +1012,7 @@
                 <a href="../services/">Meal Planning</a>
                 <a href="../services/">Lifestyle Program</a>
                 <a href="../index.html#course">The Nourished Woman</a>
+                <a href="../corporate/">Corporate Wellness</a>
             </div>
             <div>
                 <h4>Company</h4>
@@ -621,6 +1024,7 @@
                 <h4>Resources</h4>
                 <a href="../blog/">Free Resources</a>
                 <a href="../index.html#course">Programs</a>
+                <a href="../results/">Client Results</a>
                 <a href="../sitemap.xml">Sitemap</a>
             </div>
         </div>
